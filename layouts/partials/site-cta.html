@@ -1,0 +1,16 @@
+{{ $ctaClass := lower .Page.Title }}
+{{ with .Site.Data.global_partials.site_cta }}
+<section class="cta-wrapper bg-white">
+  <div class="wrapper-lg">
+    <div class="cta {{ anchorize $ctaClass }}-cta bg-primary fade-up">
+      <div class="cta__content block">
+        <div class="cta__content-inner text-white text-center flow">
+          <h2 class="cta__title">{{ .heading }}</h2>
+          <p style="max-width: 900px; margin: 1.25rem auto 0 auto;">{{ .body }}</p>
+          <a class="btn btn-white" href="{{ .button.button_url }}">{{ .button.button_text }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

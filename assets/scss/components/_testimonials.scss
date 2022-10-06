@@ -1,0 +1,38 @@
+.testimonials {
+  position: relative;
+}
+
+.testimonial {
+  background-color: $black;
+  margin: 0 auto $ic-200;
+  padding: clamp($ic-300, 6%, $ic-600);
+  position: relative;
+  height: 100%;
+
+  &::before {
+    content: '"';
+    color: $primary-color;
+    font-family: $primary-font;
+    font-size: 125px;
+    position: absolute;
+    top: -70px;
+    left: 50px;
+  }
+
+  &::after {
+    content: '"';
+    color: $primary-color;
+    font-family: $primary-font;
+    font-size: 125px;
+    position: absolute;
+    bottom: -120px;
+    right: 50px;
+  }
+
+  svg {
+    width: 100px;
+    height: 100px;
+    margin-bottom: -50px;
+    fill: $primary-color;
+  }
+}

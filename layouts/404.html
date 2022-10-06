@@ -1,0 +1,49 @@
+{{ define "main" }}
+<section aria-labelledby="hero-heading" class="hero hero-not-found">
+  <div class="hero__overlay">
+    <div class="hero__content text-center flow">
+      <h1 id="hero-heading" class="text-white no-margin">
+        {{ .Title }}
+      </h1>
+      <a class="btn btn-primary" href="https://secure.thinkreservations.com/baileysharborinn/reservations" target="_blank" rel="noreferrer">{{ partialCached "svg-icons/calendar.svg" . }} check availability</a>
+    </div>
+  </div>
+  <a href="https://goo.gl/maps/esrZWJL7yUkxmwai7" target="_blank" rel="noreferrer" title="Find Baileys Harbor Schoolhouse Inn" class="map-pin">{{ partialCached "svg-icons/map-pin.svg" . }}</a>
+  {{ partialCached "svg-icons/arrow-down.svg" . }}
+  <a href="https://secure.thinkreservations.com/baileysharborinn/reservations" target="_blank" rel="noreferrer" title="Check Availability at Baileys Harbor Schoolhouse Inn" class="calendar">{{ partialCached "svg-icons/calendar.svg" . }}</a>
+</section>
+<section class="block">
+    <div class="wrapper">
+        <article>
+            <h2>The page you requested could not be found.</h2>
+            <p>The page you've requested does not exist, or is unavailable at this time. Our website has recently been redesigned so if you tried to load a bookmarked page, or followed a link from another web site, it's possible that the page you've requested has been moved. Use the navigation menu to locate the information you are looking for or <a href="{{ "/" | relURL }}">go back to the homepage</a>.</p>
+            <ul>
+                {{ range .Site.Menus.main }}
+                          {{ if .HasChildren }}
+                              <li>
+                                <a href="{{ .URL }}" aria-label="{{ .Name }}">
+                                  {{ .Name }}
+                                </a>
+                                <div>
+                                  <ul>
+                                    {{ range .Children }}
+                                      <li>
+                                          <a href="{{ .URL }}" aria-label="{{ .Name }}">{{ .Name }}</a>
+                                      </li>
+                                    {{ end }}
+                                  </ul>
+                                </div>
+                              </li>
+                          {{ else }}
+                          <li>
+                            <a href="{{ .URL }}" aria-label="{{ .Name }}">
+                                {{ .Name }}
+                            </a>
+                          </li>
+                          {{ end }}    
+                        {{ end }}
+            </ul>
+        </article>
+    </div>
+</section>
+{{ end }}

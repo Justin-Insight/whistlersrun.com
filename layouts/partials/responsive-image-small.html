@@ -1,0 +1,11 @@
+{{ $image := (.Page.Resources.GetMatch (index .image)) }}
+
+<picture>
+    <source sizes="25vw" srcset="https://baileysharborinn.imgix.net/uploads/{{ .image }}?fm=avif&q=85&height=150&width=200&fit=crop 200w, https://baileysharborinn.imgix.net/uploads/{{ .image }}?fm=avif&q=85&height=300&width=400&fit=crop 400w, https://baileysharborinn.imgix.net/uploads/{{ .image }}?fm=avif&q=85&height=400&width=600&fit=crop 600w, https://baileysharborinn.imgix.net/uploads/{{ .image }}?fm=avif&q=85&height=600&width=800&fit=crop 800w" type="image/avif">
+
+    <source sizes="25vw" srcset="https://baileysharborinn.imgix.net/uploads/{{ .image }}?fm=webp&q=85&height=150&width=200&fit=crop 200w, https://baileysharborinn.imgix.net/uploads/{{ .image }}?fm=webp&q=85&height=300&width=400&fit=crop 400w, https://baileysharborinn.imgix.net/uploads/{{ .image }}?fm=webp&q=85&height=400&width=600&fit=crop 600w, https://baileysharborinn.imgix.net/uploads/{{ .image }}?fm=webp&q=85&height=600&width=800&fit=crop 800w" type="image/webp">
+
+    <source sizes="25vw" srcset="https://baileysharborinn.imgix.net/uploads/{{ .image }}?q=85&height=150&width=200&fit=crop 200w, https://baileysharborinn.imgix.net/uploads/{{ .image }}?q=85&height=300&width=400&fit=crop 400w, https://baileysharborinn.imgix.net/uploads/{{ .image }}?q=85&height=400&width=600&fit=crop 600w, https://baileysharborinn.imgix.net/uploads/{{ .image }}?q=85&height=600&width=800&fit=crop 800w" type="image/jpg">
+    <img loading="lazy"
+        src="https://baileysharborinn.imgix.net/uploads/{{ .image }}" width="400" height="300" alt="{{ .alt }}">
+</picture>

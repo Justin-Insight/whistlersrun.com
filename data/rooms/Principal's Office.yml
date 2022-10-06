@@ -1,0 +1,33 @@
+room_name: Principal's Office
+body: "Transport yourself back to the days the inn was still in operation as the village schoolhouse with a stay in the Principal's Office, a spacious open-concept room complete with vintage maps and décor to capture the original schoolhouse charm."
+sq_ft: 450
+sleeps: 2
+bed: King
+features: >-
+  - Located upstairs in the original 1917 part of the building
+
+  - Private entrance, deck and off-street parking
+
+  - Unique schoolhouse details (12-foot ceilings, hardwood floors, tall schoolhouse windows)
+
+  - Kitchenette equipped with all you need to prepare and enjoy meals in your room (fridge, microwave, toaster, coffee maker, cooking and eating utensils and gas grill on-site)
+
+  - Private ¾ bath equipped with essentials (hairdryer, iron and ironing board)
+
+  - Upgraded in 2022 to one king bed with custom 3” topper (can be reconfigured into two twins)
+
+  - Combines well with <a href="/rooms/upper-deck/">Upper Deck</a>
+
+  - Two night minimum
+url: /rooms/principals-office/
+text_column_left: true
+text_column_right: false
+featured_image: principals-office-1-new.jpg
+images:
+  - principals-office-2.jpg
+  - principals-office-3.jpg
+  - principals-office-1-new.jpg
+  - principals-office-4.jpg
+  - dished-and-appliances-schoolhouse-inn.jpg
+  - soaps-and-towels.jpg
+weight: 4

@@ -1,0 +1,57 @@
+{{ define "main" }} 
+{{ partialCached "home-hero" . }}
+{{ partial "intro" . }}
+{{ if .Params.our_facility_block.enabled }}
+    {{ with .Params.our_facility_block }}
+    <section class="facility page-block bg-primary text-white">
+        <div class="flex flex-column flex-row-m">
+            <div class="facility__content w-100 w-50-m block flow text-block">
+                <h2>{{ .heading }}</h2>
+                <p>{{ .body }}</p>
+                <div class="features">
+                    {{ range .features }}
+                    <div class="features__item mb-1">
+                        <div class="features__icon">
+                            <div class="features__icon-inner">
+                                <img src="{{ .icon }}" alt="">
+                            </div>
+                        </div>
+                        <p class="fs-100">{{ .feature }}</p>
+                    </div>
+                    {{ end }}
+                </div>
+                {{ if .button.enabled }}
+                  <a href="{{ .button.button_url }}" class="btn btn-white">{{ .button.button_text }}</a>
+                {{ end }} 
+            </div>
+            <div class="facility__image w-100 w-50-m background-image">
+                {{ if .image.enabled }}
+                    {{ with .image }}
+                        <img src="{{ .image_url }}" alt="{{ .image_alt }}">
+                    {{ end }}
+                {{ end }}
+            </div>
+        </div>
+    </section>
+    {{ end }}
+{{ end }}
+{{ range .Params.page_blocks }}
+    {{ partial "page-block" . }}
+{{ end }}
+{{ if .Params.gallery.enabled }}
+    {{ with .Params.gallery }}
+    <div class="block bg-white">
+        <div class="wrapper-lg">
+            <h2 class="text-center">{{ .heading }}</h2>
+            <img src="/uploads/horse-divider.svg" alt="" class="separator--horse">
+            <div class="gallery mt-4">
+                {{ range .images }}
+                <img src="{{ .image_url }}" alt="" class="gallery__image">
+                {{ end }}
+            </div>
+        </div>
+    </div>
+    {{ end }}
+{{ end }}
+{{ partialCached "site-cta" . }}
+{{ end }}

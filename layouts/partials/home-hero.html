@@ -1,0 +1,22 @@
+{{ $heroClass := lower .Page.Title }}
+{{ if .Params.hero.enabled }}
+  {{ with .Params.hero }}
+  <section aria-labelledby="hero-heading" class="hero {{ anchorize $heroClass }}-hero">
+    <video height="1080" width="1920" loop="loop" muted="true" playsinline="" style="opacity: 1;" autoplay="true" poster="" class="hero__video aspect-video">
+      <source src="{{ .video }}" type="video/mp4">
+      <!-- <source src="/uploads/placeholder-video.mp4" type="video/webm"> -->
+    </video>
+    <div class="hero__content shadow-md">
+      <div class="hero__content-inner bg-white">
+        <h1 id="hero-heading" class="no-margin text-center">{{ .heading }}</h1>
+      </div>
+    </div>
+    <button class="hero__controls video-playing" aria-label="play the video" title="play the video">
+      <div class="hero__controls-inner bg-primary icon-sm fill-white">
+        {{ partialCached "svg-icons/play.svg" . }}
+        {{ partialCached "svg-icons/pause.svg" . }}
+      </div>
+    </button>
+  </section>
+  {{ end }}
+{{ end }}

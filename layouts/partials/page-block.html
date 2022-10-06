@@ -1,0 +1,21 @@
+<section aria-labelledby="{{ .heading | urlize | lower }}-heading" class="about-page-block block bg-{{ .background_color }} footprints footprints--{{ .footprints }}">
+    <div class="wrapper-lg flex flex-column-reverse {{ if .text_column_right }}flex-row-m{{ end }}{{ if .text_column_left }}flex-row-reverse-m{{ end }} flex-center-m">
+      <div class="text-block w-100 w-40-m flow mt-3 mt-0-m">
+          <h2>{{ .heading }}</h2>
+          <img src="/uploads/fence-separator.svg" alt="" class="separator-intro" width="300" height="27">
+          <p>{{ .body | markdownify }}</p>
+          {{ if .button.enabled }}
+            {{ with .button }}
+                <a href="{{ .button_url }}" class="btn btn-primary">{{ .button_text }}</a>
+            {{ end }}
+          {{ end }}
+      </div>
+      <div class="image-block w-100 w-60-m {{ if .text_column_right }}ml-3-m{{ else }}mr-3-m{{ end }} background-image">
+        {{ if .image.enabled }}  
+            {{ with .image }}  
+                <img src="{{ .image_url }}" alt="">
+            {{ end }}
+        {{ end }}
+      </div>
+    </div>
+</section>

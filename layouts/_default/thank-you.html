@@ -1,0 +1,11 @@
+{{ define "main" }}
+{{ partial "hero-small" . }}
+{{ partial "breadcrumbs" . }}
+<section class="block">
+    <div class="wrapper-lg">
+        <h2 class="text-primary">Thank you for your message!</h2>
+        <p>A {{ .Site.Data.site_settings.business_name }} team member will contact you as soon as possible. In the meantime, take a look through some of our resources and learn more about how We Keep You Rolling!</p>
+    </div>
+</section>
+{{ partial "blog-feed" . }}
+{{ end }}

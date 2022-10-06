@@ -1,0 +1,54 @@
+.page-block {
+    &__inner {
+        background-color: $black; 
+        position: relative;
+    }
+
+    .text-block {
+        padding: clamp($ic-500, 10%, $ic-1000) clamp($ic-300, 4%, $ic-600);
+    }
+
+    .image-block {
+        @include breakpoint(md) {
+          position: absolute;
+          right: 0;
+          height: 100%; 
+        }
+
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+
+        @include breakpoint(md) {
+          &::after {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: calc(100% + 2px);
+            top: -1px;
+            left: -1px;
+            clip-path: polygon(0% 0%, 30% 0%, 1% 50%, 30% 100%, 0% 100%);
+            background-color: $black;            
+          }
+        }
+    }
+
+    .flex-row-reverse-m {
+      background-color: $black;
+
+        .image-block {
+            left: 0;
+            margin-left: 0;
+    
+            &::after {
+              right: -1px;
+              left: 1px;
+              clip-path: polygon(100% 0%,100% 100%,70% 100%,94% 50%,70% 0%);
+              background-color: $black;
+            }
+        }
+    }
+}

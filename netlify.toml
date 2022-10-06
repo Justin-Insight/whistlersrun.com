@@ -1,0 +1,60 @@
+[context.production.environment]
+  HUGO_VERSION = "0.83.1"
+
+[build]
+  command = "hugo"
+  publish = "public"
+
+[[redirects]]
+  from = "/book-now/"
+  to = "/contact/"
+
+[[redirects]]
+  from = "/rates/"
+  to = "/"
+
+[[redirects]]
+  from = "/pages/"
+  to = "/"
+
+[[redirects]]
+  from = "/rooms/homestead-suite/"
+  to = "/rooms/homestead/"
+
+[[redirects]]
+  from = "/rooms/northern-lights/"
+  to = "/rooms/"
+
+[[redirects]]
+  from = "/rooms/sunny-side/"
+  to = "/rooms/"
+
+[[redirects]]
+  from = "https://baileysharborhotel.com/*"
+  to = "https://baileysharborinn.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://baileysharborshoolhouseinn.com/*"
+  to = "https://baileysharborinn.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://doorcountyschoolhouse.com/*"
+  to = "https://baileysharborinn.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://doorcountyshoolhouseinn.com/*"
+  to = "https://baileysharborinn.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://doorschoolhouseinn.com/*"
+  to = "https://baileysharborinn.com/:splat"
+  status = 301
+  force = true

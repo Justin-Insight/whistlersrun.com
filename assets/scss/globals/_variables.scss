@@ -1,0 +1,67 @@
+// Colors
+$primary-color: #003B71;
+$secondary-color: #007934;
+$accent-color: #FFD600;
+$light-gray: #F3F9FF;
+$gray: #585858;
+$black: #231F20;
+$white: #ffffff;
+
+$transition: .3s ease-out;
+
+$radius: 5px;
+
+/* libre-baskerville-regular - latin */
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/libre-baskerville-v14-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/libre-baskerville-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/libre-baskerville-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/libre-baskerville-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/libre-baskerville-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/libre-baskerville-v14-latin-regular.svg#LibreBaskerville') format('svg'); /* Legacy iOS */
+}
+/* libre-baskerville-700 - latin */
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/libre-baskerville-v14-latin-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/libre-baskerville-v14-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/libre-baskerville-v14-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/libre-baskerville-v14-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/libre-baskerville-v14-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/libre-baskerville-v14-latin-700.svg#LibreBaskerville') format('svg'); /* Legacy iOS */
+}
+
+// Fonts
+$primary-font: 'Figtree', sans-serif;
+$secondary-font: 'Libre Baskerville', serif;
+
+$mobile-header: 75px;
+$desktop-header: 106px;
+
+// Scale and rhythm based on a major third
+$scale: 1.25;
+
+$ic--200: 1rem / $scale / $scale;
+$ic--100: 1rem / $scale;
+$ic-100: 1rem;
+$ic-200: 1rem * $scale;
+$ic-300: 1rem * $scale * $scale;
+$ic-400: 1rem * $scale * $scale * $scale;
+$ic-500: 1rem * $scale * $scale * $scale * $scale;
+$ic-600: 1rem * $scale * $scale * $scale * $scale * $scale;
+$ic-700: 1rem * $scale * $scale * $scale * $scale * $scale * $scale;
+$ic-800: 1rem * $scale * $scale * $scale * $scale * $scale * $scale * $scale;
+$ic-900: 1rem * $scale * $scale * $scale * $scale * $scale * $scale * $scale * $scale;
+$ic-1000: 1rem * $scale * $scale * $scale * $scale * $scale * $scale * $scale * $scale * $scale;
+
+
+$measure-short: 60ch;
+$measure: 80ch;
+$measure-long: 90ch;

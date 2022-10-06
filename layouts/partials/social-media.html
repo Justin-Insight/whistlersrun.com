@@ -1,0 +1,24 @@
+<ul class="social flex flex-center">
+    {{ range .Site.Data.site_settings.social_media }}
+        {{ if .link }}
+        <li class="social__list-item">
+            <a href="{{ .link }}" class="social__icon {{ .title | lower }}-icon dim" target="_blank" rel="noopener noreferrer">
+                <div class="social__icon-inner">
+                    {{ if eq .title "Facebook" }}
+                    {{ partial "svg-icons/facebook.svg" . }}
+                    {{ else if eq .title "LinkedIn"}}
+                    {{ partial "svg-icons/linkedin.svg" . }}
+                    {{ else if eq .title "YouTube"}}
+                    {{ partial "svg-icons/youtube.svg" . }}
+                    {{ else if eq .title "Twitter"}}
+                    {{ partial "svg-icons/twitter.svg" . }}
+                    {{ else if eq .title "Instagram"}}
+                    {{ partial "svg-icons/instagram.svg" . }}
+                    {{ end }}
+                    <span class="visually-hidden">{{ .title }}</span>
+                </div>
+            </a>
+        </li>
+        {{ end }}
+    {{ end }}
+</ul>

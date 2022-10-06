@@ -1,0 +1,56 @@
+{{ "<!-- Header -->" | safeHTML }}
+<a class="screen-reader-skip-to-content" href="#main-content" tabindex="0">Skip to main content</a>
+<a class="screen-reader-skip-to-content" href="#footer" tabindex="0">Skip to footer content</a>
+<header class="site-header">
+  <div class="site-header__wrapper wrapper-lg">
+    <div class="site-header__logo">
+      <a class="brand-logo" href="{{ site.BaseURL }}">
+        {{ if .Site.Data.site_settings.logo }}
+          <img src="/uploads/{{ .Site.Data.site_settings.logo }}?auto=format&width=164&height=141" width="164" height="141" alt="{{ .Site.Data.site_settings.business_name }} logo">
+        {{ else }}
+          <h1>{{ site.Title }}</h1>
+        {{ end }}
+      </a>
+    </div>
+    <div class="site-header__middle">
+      <nav class="site-header__nav" aria-label="primary navigation">
+        <ul class="nav-list">
+          {{ $url := .RelPermalink }}
+          {{ range .Site.Menus.main }}
+          {{ $active := eq $url .URL }}
+          {{ $contact := eq "Contact" .Name }}
+            <li class="nav-list__item">
+              <a class="nav-list__link shift-up fw-700" href="{{ .URL }}" aria-label="{{ .Name }}">
+                {{ .Name }}
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      </nav>
+    </div>
+    <div class="site-header__end">
+      <a class="btn btn-primary" href="/contact/schedule-a-tour/">Schedule a Tour</a>
+    </div>
+    <div class="site-header__mobile-nav">
+      <div class="site-header__mobile-nav-inner">
+        <ul  class="site-header__mobile-nav-menu">
+          {{ range .Site.Menus.main }}
+          <li>
+            <a href="{{ .URL }}" aria-label="{{ .Name }}" class="nav-list__link shift-up fw-700">
+                {{ .Name }}
+            </a>
+          </li>  
+          {{ end }}
+          <li>
+            <a class="btn btn-primary" href="/contact/schedule-a-tour/">Schedule a Tour</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <button class="hamburger hamburger--slider" type="button" aria-label="open mobile menu" aria-expanded="false">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+  </div>
+</header>

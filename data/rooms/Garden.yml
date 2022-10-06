@@ -1,0 +1,29 @@
+room_name: Garden
+body: "Our largest room at 800 square feet, the Garden features a spacious layout and quaint furnishings that will leave you feeling as if you’ve been transported to your very own countryside cottage, fit for both couples and small families."
+sq_ft: 800
+sleeps: up to 4
+bed: King
+sofa_bed: Queen futon
+features: >-
+  - Our largest and most comfortable kitchenette, complete with all you need to prepare and enjoy meals in your room (fridge, microwave, toaster, coffee maker, cooking utensils and gas grill on-site)
+
+  - Large south-facing deck
+
+  - Private entrance and off-street parking
+
+  - Private ¾ bath equipped with essentials (hairdryer, iron and ironing board)
+
+  - Improved for 2022, one king bed with 3” topper (can be reconfigured into two twins) and one queen futon.
+
+  - Two night minimum. Additional guests: $20 per night per person up to maximum of 4 guests.
+url: /rooms/garden/
+text_column_left: true
+text_column_right: false
+featured_image: garden-3-new.jpg
+images:
+  - garden-1-new.jpg
+  - garden-2-new.jpg
+  - garden-3-new.jpg
+  - garden-4-new.jpg
+  - garden-5.jpg
+weight: 6

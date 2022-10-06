@@ -1,0 +1,53 @@
+<footer id="footer" class="footer bg-white">
+  <div class="footer__top block">
+    <div class="wrapper-lg">
+      <div class="flex flex-column flex-row-m fade-staggered">
+        <div class="footer__contact footer__col flex flex-justify-center">
+          <a class="footer__logo" href="{{ site.BaseURL }}">
+            {{ if .Site.Data.site_settings.logo }}
+              <img src="/uploads/{{ .Site.Data.site_settings.logo }}?auto=format&width=164&height=141" width="164" height="141" alt="{{ .Site.Data.site_settings.business_name }} logo">
+            {{ else }}
+              <h2>{{ site.Title }}</h2>
+            {{ end }}
+          </a>
+        </div>
+        <div class="footer__col flex flex-justify-center fade-staggered">
+          <div>
+            <h2 class="h4">Contact Us</h2>
+            <address class="flow">
+              <p class="icon-sm fill-accent flex flex-center">
+                {{ partialCached "svg-icons/map-pin.svg" . }}
+                <a href="https://goo.gl/maps/oJPdvij13upbyZtq9" target="_blank" rel="noreferrer" class="ml-1">{{ .Site.Data.site_settings.address.street }}
+                {{ .Site.Data.site_settings.address.city }}, {{ .Site.Data.site_settings.address.state }} {{ .Site.Data.site_settings.address.zip }}</a>
+              </p>
+              <p class="icon-sm fill-accent flex flex-center">
+                {{ partialCached "svg-icons/phone.svg" . }}
+                <a href="tel:{{ .Site.Data.site_settings.phone }}" class="ml-1">{{ .Site.Data.site_settings.phone }}</a>
+              </p>
+            </address>
+          </div>
+        </div>
+        <div class="footer__col flex flex-justify-center fade-staggered">
+          <div>
+            <h2 class="h4">Connect With Us</h2>
+            {{ partialCached "social-media" . }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom wrapper-lg">
+    <div class="footer__bottom-wrapper">
+      <div class="copyright flex flex-column flex-row-m">
+        <p>© {{ dateFormat "2006" now }} {{ .Site.Data.site_settings.business_name }}</p>
+        <ul class="copyright__nav flex flex-justify-center flex-justify-start-m" role="list">
+          <li class="copyright__list-item"><a href="/privacy-policy/" class="copyright__nav-item">Privacy Policy</a></li>
+          <li class="copyright__list-item"><a href="/sitemap/" class="copyright__nav-item">Sitemap</a></li>
+          <li class="copyright__list-item"><a href="/contact/" class="copyright__nav-item">Contact</a></li>
+        </ul>
+        <div class="credits"><a href="https://insightcreative.com" target="_blank">Website by Insight Creative, Inc.</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+{{ partial "scripts" . }}

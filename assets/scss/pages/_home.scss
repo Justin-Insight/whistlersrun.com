@@ -1,0 +1,39 @@
+.home .intro .wrapper-lg {
+    margin-top: $ic-900;
+}
+
+.facility {
+    &__content {
+        img {
+            max-width: 25px;
+        }
+    }
+
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+
+        &__icon {
+            height: $ic-600;
+            width: $ic-600;
+            background-color: rgba($secondary-color, .5);
+            display: grid; 
+            place-items: center;
+            border-radius: 50%;
+        }
+
+        &__icon-inner {
+            height: $ic-500;
+            width: $ic-500;
+            background-color: $secondary-color;
+            display: grid; 
+            place-items: center;
+            border-radius: 50%;
+        }
+
+        &__item {
+            flex: 1 1 400px; /*  Stretching: */
+            flex: 0 1 275px; /*  No stretching: */
+        }
+    }
+}

@@ -1,0 +1,32 @@
+room_name: Upper Deck
+body: "Designed with special touches of sea glass bottles, driftwood accents and antique furnishings, Upper Deck has a breezy coastal feel perfect for a trip spent on nearby Lake Michigan."
+sq_ft: 450
+sleeps: 2
+bed: Queen
+features: >-
+  - Located upstairs in the original 1917 part of the building
+
+  - Private entrance, deck and off-street parking
+
+  - Unique schoolhouse details (12-foot ceilings, hardwood floors, tall schoolhouse windows)
+
+  - Kitchenette equipped with all you need to prepare and enjoy meals in your room (fridge, microwave, toaster, coffee maker, cooking and eating utensils and gas grill on-site)
+
+  - Private ¾ bath equipped with essentials (hairdryer, iron and ironing board)
+
+  - One queen bed
+
+  - Combines well with <a href="/rooms/principals-office/">Principal's Office</a>
+
+  - Two night minimum
+url: /rooms/upper-deck/
+text_column_left: false
+text_column_right: true
+featured_image: upper-deck-2-new.jpg
+images:
+  - upper-deck-2-new.jpg
+  - upper-deck-3-new.jpg
+  - upper-deck-1-new.jpg
+  - dished-and-appliances-schoolhouse-inn.jpg
+  - soaps-and-towels.jpg
+weight: 3

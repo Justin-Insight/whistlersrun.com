@@ -1,0 +1,99 @@
+.icon {
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.icon-lg {
+  height: $ic-800;
+  width: $ic-800;
+
+  svg {
+    width: $ic-600;
+    height: auto;
+  }
+}
+
+.icon-md {
+  svg {
+    width: $ic-300;
+    height: auto;
+  }
+}
+
+.icon-sm {
+  svg {
+    width: $ic-100;
+    height: auto;
+  }
+}
+
+.icon-primary {
+  box-shadow: 0 5px 15px rgba($accent-color, .5);
+
+  svg {
+    fill: $primary-color;
+  }
+}
+
+.icon-white {
+  box-shadow: 0 5px 15px rgba($primary-color, .5);
+
+  svg {
+    fill: $white;
+  }
+}
+
+.fill-primary {
+  svg {
+    fill: $primary-color;
+  }
+}
+
+.fill-secondary {
+  svg {
+    fill: $secondary-color;
+  }
+}
+
+.fill-accent {
+  svg {
+    fill: $accent-color;
+  }
+}
+
+.fill-black {
+  svg {
+    fill: $black;
+  }
+}
+
+.fill-white {
+  svg {
+    fill: $white;
+  }
+}
+
+.stroke-primary {
+  svg {
+    stroke: $primary-color;
+  }
+}
+
+.stroke-secondary {
+  svg {
+    stroke: $secondary-color;
+  }
+}
+
+.stroke-black {
+  svg {
+    stroke: $black;
+  }
+}
+
+.stroke-white {
+  svg {
+    stroke: $white;
+  }
+}
