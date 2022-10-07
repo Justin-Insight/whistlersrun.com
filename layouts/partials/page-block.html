@@ -2,7 +2,7 @@
     <div class="wrapper-lg flex flex-column-reverse {{ if .text_column_right }}flex-row-m{{ end }}{{ if .text_column_left }}flex-row-reverse-m{{ end }} flex-center-m">
       <div class="text-block w-100 w-40-m flow mt-3 mt-0-m">
           <h2>{{ .heading }}</h2>
-          <img src="/uploads/fence-separator.svg" alt="" class="separator-intro" width="300" height="27">
+          <img src="/uploads/fence-separator.svg" alt="" class="separator--fence" width="300" height="27">
           <p>{{ .body | markdownify }}</p>
           {{ if .button.enabled }}
             {{ with .button }}

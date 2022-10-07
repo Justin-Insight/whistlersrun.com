@@ -85,7 +85,7 @@ page_blocks:
     background_color: gray
 gallery:
   enabled: true
-  heading: Life at Whistler's Run?
+  heading: Life on the Farm
   images:
     - image_url: /uploads/horse-boarding-in-depere-wi-2.jpg
       image_alt:

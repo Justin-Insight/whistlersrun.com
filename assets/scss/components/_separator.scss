@@ -5,9 +5,9 @@
     background-color: $primary-color;
 }
 
-.separator-intro {
+.separator--fence {
     max-width: 125px; 
-    margin: 0;
+    margin: $ic-300 0;
     position: relative;
     left: -8px;
 } 

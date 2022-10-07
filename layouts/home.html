@@ -8,18 +8,18 @@
             <div class="facility__content w-100 w-50-m block flow text-block">
                 <h2>{{ .heading }}</h2>
                 <p>{{ .body }}</p>
-                <div class="features">
+                <ul class="features no-padding">
                     {{ range .features }}
-                    <div class="features__item mb-1">
-                        <div class="features__icon">
-                            <div class="features__icon-inner">
+                    <li class="features__item mb-1 list-style-none flex flex-column flex-center">
+                        <span class="features__icon">
+                            <span class="features__icon-inner">
                                 <img src="{{ .icon }}" alt="">
-                            </div>
-                        </div>
+                            </span>
+                        </span>
                         <p class="fs-100">{{ .feature }}</p>
-                    </div>
+                    </li>
                     {{ end }}
-                </div>
+                </ul>
                 {{ if .button.enabled }}
                   <a href="{{ .button.button_url }}" class="btn btn-white">{{ .button.button_text }}</a>
                 {{ end }} 
