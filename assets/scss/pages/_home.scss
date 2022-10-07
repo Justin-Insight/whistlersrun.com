@@ -13,6 +13,12 @@
         display: flex;
         flex-wrap: wrap;
 
+        &__item {
+            flex: 1 1 400px; /*  Stretching: */
+            flex: 0 1 275px; /*  No stretching: */
+            margin-top: 0;
+        }
+
         &__icon {
             height: $ic-600;
             width: $ic-600;
@@ -29,11 +35,6 @@
             display: grid; 
             place-items: center;
             border-radius: 50%;
-        }
-
-        &__item {
-            flex: 1 1 400px; /*  Stretching: */
-            flex: 0 1 275px; /*  No stretching: */
         }
     }
 }
