@@ -14,7 +14,7 @@ intro:
   enabled: true
   heading: Full-service horse boarding and animal rescue in De Pere, WI
   body: >-
-    <p>Located on 42 gorgeous acres just 15 minutes from downtown De Pere, Whistler’s Run and Rescue is a barn where all animals (and their humans) can feel welcome, loved and cared for. We offer full-service horse boarding, as well as private tours to view the barn and meet our rescue pigs, horses, goats, cows and other full-time residents.</p>
+    <p>Located on 42 gorgeous acres just 15 minutes from downtown De Pere, Whistler’s Run and Rescue is a barn where all animals (and their humans) can feel welcome, loved and cared for. We offer full-service horse boarding, as well as private tours to view the barn and meet each of the horses and other full-time residents of Whistler's Run.</p>
 
     <p>Looking to visit or join the Whistler’s Run family?</p>
   button:
@@ -69,7 +69,7 @@ page_blocks:
       image_alt:
     footprints: left
     background_color: white
-  - heading: Meet our herd
+  - heading: Our herd
     body: "Get to know the owners behind Whistler’s Run and meet each of the animals who make our barn so special."
     button:
       enabled: true
