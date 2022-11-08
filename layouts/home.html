@@ -1,6 +1,6 @@
 {{ define "main" }} 
-{{ partialCached "home-hero" . }}
-{{ partial "intro" . }}
+{{ partialCached "home/home-hero" . }}
+{{ partial "home/home-intro" . }}
 {{ if .Params.our_facility_block.enabled }}
     {{ with .Params.our_facility_block }}
     <section class="facility page-block bg-primary text-white">
@@ -35,8 +35,10 @@
     </section>
     {{ end }}
 {{ end }}
-{{ range .Params.page_blocks }}
-    {{ partial "page-block" . }}
+{{ if .Params.page_blocks }}
+    {{ range .Params.page_blocks }}
+        {{ partial "page-block" . }}
+    {{ end }}
 {{ end }}
 {{ if .Params.gallery.enabled }}
     {{ with .Params.gallery }}

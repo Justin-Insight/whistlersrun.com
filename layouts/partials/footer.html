@@ -13,18 +13,19 @@
         </div>
         <div class="footer__col flex flex-justify-center fade-staggered">
           <div>
-            <h2 class="h4">Contact Us</h2>
-            <address class="flow">
-              <p class="icon-sm fill-accent flex flex-center">
-                {{ partialCached "svg-icons/map-pin.svg" . }}
-                <a href="https://goo.gl/maps/oJPdvij13upbyZtq9" target="_blank" rel="noreferrer" class="ml-1">{{ .Site.Data.site_settings.address.street }}
-                {{ .Site.Data.site_settings.address.city }}, {{ .Site.Data.site_settings.address.state }} {{ .Site.Data.site_settings.address.zip }}</a>
-              </p>
-              <p class="icon-sm fill-accent flex flex-center">
-                {{ partialCached "svg-icons/phone.svg" . }}
-                <a href="tel:{{ .Site.Data.site_settings.phone }}" class="ml-1">{{ .Site.Data.site_settings.phone }}</a>
-              </p>
-            </address>
+            <h2 class="h4">Navigate</h2>
+            <ul class="footer-nav">
+              {{ range .Site.Menus.main }}
+                <li class="footer-nav__item">
+                  <a class="footer-nav__link shift-up fw-700" href="{{ .URL }}" aria-label="{{ .Name }}">
+                    {{ .Name }}
+                  </a>
+                </li>
+              {{ end }}
+              <li class="footer-nav__item">
+                <a class="footer-nav__link shift-up fw-700" href="/contact/schedule-a-tour/" aria-label="Schedule a Tour">Schedule a Tour</a>
+              </li>
+            </ul>
           </div>
         </div>
         <div class="footer__col flex flex-justify-center fade-staggered">

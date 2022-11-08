@@ -1,7 +1,7 @@
 {{ $heroClass := lower .Page.Title }}
 {{ if .Params.hero.enabled }}
   {{ with .Params.hero }}
-  <section aria-labelledby="hero-heading" class="hero {{ anchorize $heroClass }}-hero">
+  <section aria-labelledby="hero-heading" class="{{ anchorize $heroClass }}-hero">
     <video height="1080" width="1920" loop="loop" muted="true" playsinline="" style="opacity: 1;" autoplay="true" poster="" class="hero__video aspect-video">
       <source src="{{ .video }}" type="video/mp4">
       <!-- <source src="/uploads/placeholder-video.mp4" type="video/webm"> -->

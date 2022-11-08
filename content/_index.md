@@ -61,8 +61,8 @@ page_blocks:
       enabled: true
       button_url: /about/our-philosophy/
       button_text: Our philosophy
-    text_column_left: false
-    text_column_right: true
+    text_column_left: true
+    text_column_right: false
     image:
       enabled: true
       image_url: /uploads/horses-and-dog-out-in-field.jpg
@@ -75,8 +75,8 @@ page_blocks:
       enabled: true
       button_url: /about/
       button_text: Meet our herd
-    text_column_left: true
-    text_column_right: false
+    text_column_left: false
+    text_column_right: true
     image:
       enabled: true
       image_url: /uploads/staff-with-dog.jpg

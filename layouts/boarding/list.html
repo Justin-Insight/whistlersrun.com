@@ -1,0 +1,40 @@
+{{ define "main" }}
+{{ partial "hero" . }}
+{{ partial "intro" . }}
+{{ if .Params.page_blocks }}
+    {{ range .Params.page_blocks }}
+        {{ partial "page-block" . }}
+    {{ end }}
+{{ end }}
+{{ if .Params.weather_protection_block.enabled }}
+    {{ with .Params.weather_protection_block }}
+    <section aria-labelledby="weather-heading" class="block bg-gray">
+        <div class="wrapper-lg flow">
+            <h2 id="weather-heading" class="text-center">{{ .heading }}</h2>
+            <img src="/uploads/horse-divider.svg" alt="" class="separator--horse">
+            <p class="text-center max-width-none">{{ .subheading }}</p>
+            <div class="block-sm">
+                <div class="flex flex-column flex-row-m">
+                    {{ .body | markdownify }}
+                </div>
+            </div>
+        </div>
+    </section>
+    {{ end }}
+{{ end }}
+{{ if .Params.facility_amenities_block.enabled }}
+    {{ with .Params.facility_amenities_block }}
+        {{ partial "page-block" . }}
+    {{ end }}
+{{ end }}
+{{ if .Params.boarding_notice_block.enabled }}
+    {{ with .Params.boarding_notice_block }}
+        <div class="block">
+            <div class="wrapper">
+                {{ .body | markdownify }}
+            </div>
+        </div>
+    {{ end }}
+{{ end }}
+{{ partialCached "site-cta" . }}
+{{ end }}

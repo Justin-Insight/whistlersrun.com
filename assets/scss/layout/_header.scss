@@ -103,7 +103,7 @@
   }
 }
 
-.nav-list__link, .site-header__mobile-nav a:not(.btn) {
+.nav-list__link, .site-header__mobile-nav a:not(.btn), .footer-nav__link {
   position: relative;
   text-decoration: none;
   font-family: $secondary-font;

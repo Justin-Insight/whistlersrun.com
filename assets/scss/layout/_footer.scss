@@ -22,17 +22,9 @@
     border-top: 1px solid rgba($primary-color, .25);
   }
 
-  a {
-    text-decoration: none;
-
-    &:hover,
-    &:focus {
-      text-decoration: underline;
-    }
-  }
-
-  .footer__contact a {
-    font-size: $ic-100;
+  .footer-nav {
+    list-style: none;
+    padding: 0;
   }
 
   .copyright {
@@ -41,6 +33,15 @@
 
     @include breakpoint(sm) {
       flex-direction: row;
+    }
+
+    a {
+      text-decoration: none;
+  
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
     }
 
     p {

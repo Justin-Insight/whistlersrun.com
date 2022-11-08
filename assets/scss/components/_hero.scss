@@ -1,6 +1,11 @@
+.home-hero {
+  position: relative;
+  height: 75vh;
+}
+
 .hero {
   position: relative;
-  height: 90vh;
+  height: 55vh;
   // overflow: hidden;
 
   &__video {
@@ -63,7 +68,9 @@
     transform: translateX(-50%);
     margin-top: -100px;
     padding: $ic-200;
-    width: 800px;
+    width: 100%;
+    max-width: 63rem;
+    margin-inline: auto;
     background-color: rgba($white, .7);
 
     h2 {
