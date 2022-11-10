@@ -21,7 +21,7 @@
                     {{ end }}
                 </ul>
                 {{ if .button.enabled }}
-                  <a href="{{ .button.button_url }}" class="btn btn-white">{{ .button.button_text }}</a>
+                  <a href="{{ .button.button_url }}" class="btn btn--white">{{ .button.button_text }}</a>
                 {{ end }} 
             </div>
             <div class="facility__image w-100 w-50-m background-image">
@@ -55,5 +55,9 @@
     </div>
     {{ end }}
 {{ end }}
-{{ partialCached "site-cta" . }}
+{{ if .Params.cta_block.enabled }}
+    {{ with .Params.cta_block }}
+        {{ partial "site-cta" . }}
+    {{ end }}
+{{ end }}
 {{ end }}

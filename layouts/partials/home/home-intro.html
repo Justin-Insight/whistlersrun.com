@@ -11,10 +11,10 @@
           {{ .body | safeHTML }}
         {{ end }} 
         {{ if .button.enabled }}
-          <a href="{{ .button.button_url }}" class="btn btn-primary">{{ .button.button_text }}</a>
+          <a href="{{ .button.button_url }}" class="btn btn--primary">{{ .button.button_text }}</a>
         {{ end }} 
         {{ if .button_2.enabled }}
-          <a href="{{ .button_2.button_url }}" class="btn btn-primary mt-3 mt-0-m ml-3">{{ .button_2.button_text }}</a>
+          <a href="{{ .button_2.button_url }}" class="btn btn--primary mt-3 mt-0-m ml-3">{{ .button_2.button_text }}</a>
         {{ end }} 
       </div>
       <div class="w-100 w-50-m mt-6 mt-0-m ml-3">

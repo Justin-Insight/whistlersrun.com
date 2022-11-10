@@ -8,8 +8,6 @@ hero:
   enabled: true
   heading: Where all animals are welcome and loved.
   video: /uploads/whistlers-drone-intro.mp4
-  image:
-  image_alt:
 intro:
   enabled: true
   heading: Full-service horse boarding and animal rescue in De Pere, WI
@@ -19,7 +17,7 @@ intro:
     <p>Looking to visit or join the Whistler’s Run family?</p>
   button:
     enabled: true
-    button_url: /contact/schedule-a-tour/
+    button_url: /schedule-a-tour/
     button_text: Schedule a tour
   button_2:
     enabled: true
@@ -101,4 +99,12 @@ gallery:
       image_alt:
     - image_url: /uploads/horses-at-whistlers-run-2.jpg
       image_alt:
+cta_block:
+  enabled: true
+  heading: Visit Whistler’s Run
+  body: Calling all animal lovers! We offer private, educational tours for small groups of all ages. Schedule your tour to meet the animals at Whistler’s Run and see our gorgeous facility for yourself.
+  button:
+    enabled: true
+    button_url: /schedule-a-tour/
+    button_text: Schedule your visit
 ---

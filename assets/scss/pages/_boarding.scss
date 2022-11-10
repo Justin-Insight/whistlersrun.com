@@ -1,0 +1,15 @@
+.weather-block {
+    .w-50-m + .w-50-m {
+        margin-top: $ic-300;
+
+        @include breakpoint(md) {
+            margin-top: 0;
+            margin-left: $ic-300;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+}

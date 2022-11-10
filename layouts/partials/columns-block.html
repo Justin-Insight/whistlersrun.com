@@ -1,0 +1,16 @@
+<section class="block bg-{{ .background_color }}">
+    <div class="wrapper-lg grid-{{ .number_of_columns }}">
+      {{ range .columns }}
+        <div class="column flow">
+          <h2>{{ .heading }}</h2>
+          <img src="/uploads/fence-separator.svg" alt="" class="separator--fence" width="300" height="27">
+          <p>{{ .body | markdownify }}</p>
+          {{ if .button.enabled }}
+            {{ with .button }}
+                <a href="{{ .button_url }}" class="btn btn--primary">{{ .button_text }}</a>
+            {{ end }}
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+</section>

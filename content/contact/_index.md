@@ -1,20 +1,21 @@
 ---
 title: Contact
-seo:
-  page_title:
-  meta_description:
-  featured_image:
-hero:
-  heading: Contact Us
-  image:
-    image_url: baileys-harbor-schoolhouse-inn-front-exterior.jpg
-    image_alt:
 menu:
   main:
     weight: 4
   footer:
     weight: 4
+seo:
+  page_title:
+  meta_description: Contact us today to schedule a private tour of our barn and meet our animals, board your horse or ask a question about Whistler’s Run and Rescue.
+  featured_image:
+hero:
+  heading: Contact Us
+  image:
+    image_url: /uploads/horse-boarding-in-depere-wi.jpg
+    image_alt:
 intro:
+  enabled: true
   heading: How can we Help?
-  body: We are happy to answer your questions regarding the inn, booking your stay, <a href="/location/">what to do around Baileys Harbor</a> and any other questions you may have. Please contact us via the form below and we will get back to you as soon as possible.
+  body: If you have any questions about Whistler’s Run, would like to schedule a private tour or join our boarding waitlist, please fill out the contact form below or give us a call at <a href="tel:(920) 918-6800">(920) 918-6800</a>.
 ---

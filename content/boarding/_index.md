@@ -1,28 +1,29 @@
 ---
 title: Boarding
-seo:
-  page_title:
-  meta_description: Whistler’s Run offers full-service boarding for horses of all breeds, sizes and disciplines on 42 gorgeous acres in De Pere, Wisconsin.
-  featured_image:
 menu:
   main:
     weight: 1
   footer:
     weight: 1
+seo:
+  page_title:
+  meta_description: Whistler’s Run offers full-service boarding for horses of all breeds, sizes and disciplines on 42 gorgeous acres in De Pere, Wisconsin.
+  featured_image:
 hero:
   heading: Full-Service Equestrian Boarding in De Pere, WI
   body: |-
 
-  image_url: /uploads/horse-boarding-in-depere-wi.jpg
-  image_alt:
+  image:
+    image_url: /uploads/horse-boarding-in-depere-wi.jpg
+    image_alt:
 intro:
   enabled: true
   heading:
   body: |-
-    Let us make your boarding dreams come true! No matter the breed, size or discipline of your horse, they’ll be readily welcome and expertly cared for at Whistler’s Run. 
+    <p>Let us make your boarding dreams come true! No matter the breed, size or discipline of your horse, they’ll be readily welcome and expertly cared for at Whistler’s Run.</p>
 
 
-    You don’t have to choose between good, better or best when you board with us. We offer one, all-inclusive boarding service for a monthly fee of $500.
+    <p>You don’t have to choose between good, better or best when you board with us. We offer one, all-inclusive boarding service for a monthly fee of $500.</p>
   button:
     enabled: true
     button_url: /#/
@@ -35,7 +36,7 @@ intro:
     enabled: true
     heading:
     body: |-
-      _At this time, Whistler’s Run is at capacity for boarders. If you’re interested in boarding at our barn, please contact us to join the waitlist._
+      _At this time, Whistler’s Run is at capacity for boarders. If you’re interested in boarding at our barn, please [contact us](/contact/) to join the waitlist._
 page_blocks:
   - heading: Boarding inclusions
     body: |-
@@ -90,27 +91,23 @@ weather_protection_block:
   enabled: true
   heading: Year-round weather protection
   subheading: Wisconsin weather can be unpredictable, but we’re prepared for the good and bad conditions year-round.
-  body: |-
-    <div class="w-100 w-50-m flow">
-    <h3>Spring/Summer</h3>
+  columns:
+    - heading: Spring/Summer
+      body: |-
+        - Industrial indoor fans
 
-    - Industrial indoor fans
+        - Horses brought inside during storms and other harsh conditions 
 
-    - Horses brought inside during storms and other harsh conditions 
+        - Outdoor runs for shade and protection from light rain
 
-    - Outdoor runs for shade and protection from light rain
+        - Fly masks and sheets applied before turnout (when needed)
+    - heading: Fall/Winter
+      body: |-
+        - Anti-freeze automatic waterers 
 
-    - Fly masks and sheets applied before turnout (when needed)
-    </div>
-    <div class="w-100 w-50-m mt-3 mt-0-m ml-3 flow">
-    <h3>Fall/Winter</h3>
+        - Blankets put on before turnout (when needed)
 
-    - Anti-freeze automatic waterers 
-
-    - Blankets put on before turnout (when needed)
-
-    - Heated barn and floors (kept at 52 degrees)
-    </div>
+        - Heated barn and floors (kept at 52 degrees)
 facility_amenities_block:
   enabled: true
   heading: Facility amenities
@@ -167,4 +164,12 @@ facility_amenities_block:
 #     enabled: true
 #     button_url: /#/
 #     button_text: Liability Contract
+cta_block:
+  enabled: true
+  heading: Visit Whistler’s Run
+  body: Calling all animal lovers! We offer private, educational tours for small groups of all ages. Schedule your tour to meet the animals at Whistler’s Run and see our gorgeous facility for yourself.
+  button:
+    enabled: true
+    button_url: /schedule-a-tour/
+    button_text: Schedule your visit
 ---

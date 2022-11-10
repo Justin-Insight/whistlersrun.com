@@ -1,0 +1,61 @@
+{{ define "main" }}
+<!-- Start block specific to our staff pages -->
+{{ if (or (eq .Title "Lauren") (eq .Title "Alissa")) }}
+    {{ partial "hero-small" . }}
+    <div class="block">
+        <div class="wrapper flow">
+            {{ .Content }}
+        </div>
+    </div>
+{{ end }}
+<!-- End block specific to our staff pages -->
+{{ if eq .Title "Our Philosophy" }}
+    {{ partial "hero" . }}
+    {{ partial "intro" . }}
+    {{ if .Params.natural_horsemanship_block.enabled }}
+        {{ with .Params.natural_horsemanship_block }}
+            <div class="block bg-gray">
+                <div class="wrapper flow">
+                    {{ if .heading }}
+                        <h2>{{ .heading }}</h2>
+                        <img src="/uploads/fence-separator.svg" alt="" class="separator--fence" width="300" height="27">
+                    {{ end }}
+                    {{ if .body }}
+                        {{ .body | markdownify }}
+                    {{ end }}
+                </div>
+            </div>
+        {{ end }}
+    {{ end }}
+    {{ if .Params.health_and_safety_block.enabled }}
+        {{ with .Params.health_and_safety_block }}
+            <div class="block">
+                <div class="wrapper flow">
+                    {{ if .heading }}
+                        <h2>{{ .heading }}</h2>
+                        <img src="/uploads/fence-separator.svg" alt="" class="separator--fence" width="300" height="27">
+                    {{ end }}
+                    {{ if .body }}
+                        {{ .body | markdownify }}
+                    {{ end }}
+                    {{ if .button.enabled }}
+                        {{ with .button }}
+                            <a href="{{ .button_url }}" class="btn btn--primary">{{ .button_text }}</a>
+                        {{ end }}
+                    {{ end }}
+                </div>
+            </div>
+        {{ end }}
+    {{ end }}
+    {{ if .Params.page_blocks }}
+        {{ range .Params.page_blocks }}
+            {{ partial "page-block" . }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+{{ if .Params.cta_block.enabled }}
+    {{ with .Params.cta_block }}
+        {{ partial "site-cta" . }}
+    {{ end }}
+{{ end }}
+{{ end }}

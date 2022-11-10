@@ -1,0 +1,9 @@
+{{ define "main" }}
+{{ partial "hero" . }}
+{{ partial "intro" . }}
+{{ if .Params.cta_block.enabled }}
+    {{ with .Params.cta_block }}
+        {{ partial "site-cta" . }}
+    {{ end }}
+{{ end }}
+{{ end }}

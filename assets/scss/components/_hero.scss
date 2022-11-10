@@ -151,7 +151,12 @@
 .location-hero,
 .contact-hero,
 .page-404-page-not-found {
-  .btn-primary {
+  .btn--primary {
     display: none;
   }
+}
+
+.parent-page-about .hero--small {
+  height: 35vh;
+  background-position: bottom;
 }

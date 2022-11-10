@@ -1,7 +1,29 @@
-.family-images {
-    img {
-        height: 100%;
-        max-height: 400px;
-        object-fit: cover;
+.page-about {
+    .cta-wrapper {
+        margin-top: clamp($ic-500, 10%, $ic-1000);
+    }
+
+    .intro {
+        text-align: center;
+
+        p {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    }
+}
+
+.page-about, .page-our-philosophy {
+    .intro {
+        text-align: center;
+
+        .separator--fence {
+            display: none;
+        }
+
+        p {
+            max-width: 600px;
+            margin: $ic-200 auto;
+        }
     }
 }

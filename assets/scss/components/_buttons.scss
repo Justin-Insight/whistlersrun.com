@@ -34,7 +34,7 @@
   }
 }
 
-.btn-primary {
+.btn--primary {
   color: $black;
   background-color: $accent-color;
   border: 1px solid $accent-color;
@@ -54,7 +54,7 @@
   }
 }
 
-.btn-secondary {
+.btn--secondary {
   color: $white;
   background-color: $secondary-color;
   border: 1px solid $secondary-color;
@@ -74,7 +74,7 @@
   }
 }
 
-.btn-white {
+.btn--white {
   color: $black;
   background-color: $white;
   border: 1px solid $white;

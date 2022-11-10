@@ -6,7 +6,7 @@
           <p>{{ .body | markdownify }}</p>
           {{ if .button.enabled }}
             {{ with .button }}
-                <a href="{{ .button_url }}" class="btn btn-primary">{{ .button_text }}</a>
+                <a href="{{ .button_url }}" class="btn btn--primary">{{ .button_text }}</a>
             {{ end }}
           {{ end }}
       </div>

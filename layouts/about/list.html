@@ -1,3 +1,44 @@
-{{ define "main" }} 
-
+{{ define "main" }}
+{{ partial "hero" . }}
+{{ partial "intro" . }}
+{{ if .Params.page_blocks }}
+    {{ range .Params.page_blocks }}
+        {{ partial "page-block" . }}
+    {{ end }}
+{{ end }}
+{{ if .Params.about_our_animals_block.enabled }}
+    {{ with .Params.about_our_animals_block }}
+        <section class="block bg-{{ .background_color }}">
+            <div class="wrapper-lg">
+                <div class="text-center flow">
+                {{ if .heading }}
+                    <h2 id="weather-heading">{{ .heading }}</h2>
+                {{ end }}
+                {{ if .body }}
+                    <p style="max-width: 750px; margin: 1.25rem auto 0 auto;">{{ .body | markdownify }}</p>
+                {{ end }}
+                {{ if .image.enabled }}
+                    {{ with .image }}
+                        <img src="{{ .image_url }}" alt="{{ .image_alt }}" style="max-width: 700px; margin: 1.25rem auto;">
+                    {{ end }}
+                {{ end }}
+                </div>
+            </div>
+        </section>
+    {{ end }}
+{{ end }}
+{{ if .Params.columns_block.enabled }}
+    {{ with .Params.columns_block }}
+        {{ if eq .column_variation "standard" }}
+            {{ partial "columns-block" . }}
+        {{ else }}
+            {{ partial "columns-block-centered" . }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+{{ if .Params.cta_block.enabled }}
+    {{ with .Params.cta_block }}
+        {{ partial "site-cta" . }}
+    {{ end }}
+{{ end }}
 {{ end }}

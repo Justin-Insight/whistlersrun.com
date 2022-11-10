@@ -1,16 +1,40 @@
-.contact {
-  .w-60-m + .w-40-m {
-    margin-top: $ic-400;
+.contact-form {
+  background-color: $white;
+  box-shadow: 8px 8px 48px rgba($primary-color, 0.25);
 
-    @include breakpoint(md) {
-      margin-left: $ic-400;
-      margin-top: 0;
+  &__content {
+    position: relative;
+    z-index: 3;
+    font-weight: 700;
+    color: $white;
+    letter-spacing: 2.5px;
+    text-align: center;
+  }
+
+  &__number {
+    position: relative;
+    line-height: 1;
+    color: $primary-color;
+    z-index: 1;
+    margin-right: $ic-200;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: -8px;
+      background-color: $accent-color;
+      height: $ic-400;
+      width: $ic-400;
+      border-radius: 50%;
+    }
+
+    a {
+      color: $white !important;
+      text-decoration: none;
     }
   }
-}
-
-.contact-form {
-  background-color: $black;
 
   &__inner {
     border: 1px solid $white;
@@ -27,13 +51,6 @@
     @include breakpoint(xl) {
       padding: $ic-600;
     }
-  }
-
-  &__netlify-bot-field {
-    opacity: 0;
-    height: 0;
-    width: 0;
-    margin: 0;
   }
 
   &__row-wrapper {
@@ -57,19 +74,18 @@
     flex: 0 0 25%;
     font-size: $ic-200;
     font-weight: 700;
-    color: $white;
+    color: $primary-color;
   }
 
   .contact-form__form-group input,
   .contact-form__form-group textarea,
   .contact-form__form-group select {
-    background-color: $black;
-    color: $light-gray;
+    background-color: $white;
+    color: $black;
+    border: 1px solid $light-gray;
     width: 100%;
     padding: $ic-100 $ic-200;
     margin-bottom: $ic-100;
-    flex: 1 1 75%;
-    border: none;
     height: $ic-700;
 
     &:focus {
@@ -77,23 +93,15 @@
     }
   }
 
-  .radio {
-    align-items: center;
-
-    input {
-      width: auto;
-      margin-bottom: 0;
-      margin-right: $ic-200;
-    }
+  .contact-form__form-group textarea {
+    height: $ic-1000;
   }
 
-  .contact-form__form-group textarea {
-    height: $ic-900;
+  &__btn {
+    border: none;
   }
 }
 
-.contact-sidebar {
-  iframe {
-    height: 350px;
-  }
+form.hidden {
+  display: none;
 }
