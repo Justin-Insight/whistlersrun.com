@@ -75,7 +75,7 @@ health_and_safety_block:
   button:
     enabled: true
     button_url: /boarding/
-    button_text: Boarding services
+    button_text: Our boarding services
 cta_block:
   enabled: true
   heading: Visit Whistler’s Run

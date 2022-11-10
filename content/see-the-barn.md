@@ -1,5 +1,6 @@
 ---
 title: See the Barn
+layout: see-the-barn
 seo:
   page_title:
   meta_description: Get the full picture of our entire facility—from the 19-stall barn and indoor arena to the 25-acre riding trail and outdoor pastures!
