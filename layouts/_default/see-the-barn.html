@@ -1,56 +1,64 @@
 {{ define "main" }}
-<!-- Start block specific to our staff pages -->
-{{ if (or (eq .Title "Lauren") (eq .Title "Alissa")) }}
-    {{ partial "hero-small" . }}
-    <div class="block">
-        <div class="wrapper flow">
-            {{ .Content }}
+{{ partial "hero" . }}
+{{ partial "intro" . }}
+{{ if .Params.features_and_amenities_block.enabled }}
+    {{ with .Params.features_and_amenities_block }}
+    <div class="block bg-gray">
+        <div class="wrapper-lg">
+            {{ if .heading }}
+                <h2 class="text-center">{{ .heading }}</h2>
+            {{ end }}
+            {{ if .body }}
+                <p class="text-center" style="max-width: 800px; margin: 1.25rem auto;">{{ .body | markdownify }}</p>
+            {{ end }}
+            {{ if .features }}
+                <div class="grid-3 mt-6">
+                    {{ range .features }}
+                        <div class="card flex flex-column p-relative">
+                            {{ if .image }}
+                                {{ with .image }}
+                                <div class="card__image cover-image">
+                                    <img src="{{ .image_url }}" alt="{{ .image_alt }}">
+                                </div>
+                                {{ end }}
+                            {{ end }}
+                            {{ if (or ( .heading ) ( .body )) }}
+                                <div class="card__body flex shadow-xl">
+                                    <div class="card__body-inner bg-white flow">
+                                        {{ if .heading }}
+                                            <h3 class="h5">{{ .heading }}</h3>
+                                        {{ end }}
+                                        {{ if .body }}
+                                            <div class="fs-100">{{ .body | markdownify }}</div>
+                                        {{ end }}
+                                    </div>
+                                </div>
+                            {{ end }}
+                        </div>
+                    {{ end }}
+                </div>
+            {{ end }}
         </div>
     </div>
+    {{ end }}
 {{ end }}
-<!-- End block specific to our staff pages -->
-{{ if eq .Title "Our Philosophy" }}
-    {{ partial "hero" . }}
-    {{ partial "intro" . }}
-    {{ if .Params.natural_horsemanship_block.enabled }}
-        {{ with .Params.natural_horsemanship_block }}
-            <div class="block bg-gray">
-                <div class="wrapper flow">
-                    {{ if .heading }}
-                        <h2>{{ .heading }}</h2>
-                        <img src="/uploads/fence-separator.svg" alt="" class="separator--fence" width="300" height="27">
+{{ if .Params.visit_us_block.enabled }}
+    {{ with .Params.visit_us_block }}
+        <div class="block">
+            <div class="wrapper text-center flow">
+                {{ if .heading }}
+                    <h2>{{ .heading }}</h2>
+                {{ end }}
+                {{ if .body }}
+                    <p style="max-width: 800px; margin: 1.25rem auto 0 auto;">{{ .body | markdownify }}</p>
+                {{ end }}
+                {{ if .button }}
+                    {{ with .button }}
+                    <a href="{{ .button_url }}" class="btn btn--primary">{{ .button_text }}</a>
                     {{ end }}
-                    {{ if .body }}
-                        {{ .body | markdownify }}
-                    {{ end }}
-                </div>
+                {{ end }}
             </div>
-        {{ end }}
-    {{ end }}
-    {{ if .Params.health_and_safety_block.enabled }}
-        {{ with .Params.health_and_safety_block }}
-            <div class="block">
-                <div class="wrapper flow">
-                    {{ if .heading }}
-                        <h2>{{ .heading }}</h2>
-                        <img src="/uploads/fence-separator.svg" alt="" class="separator--fence" width="300" height="27">
-                    {{ end }}
-                    {{ if .body }}
-                        {{ .body | markdownify }}
-                    {{ end }}
-                    {{ if .button.enabled }}
-                        {{ with .button }}
-                            <a href="{{ .button_url }}" class="btn btn--primary">{{ .button_text }}</a>
-                        {{ end }}
-                    {{ end }}
-                </div>
-            </div>
-        {{ end }}
-    {{ end }}
-    {{ if .Params.page_blocks }}
-        {{ range .Params.page_blocks }}
-            {{ partial "page-block" . }}
-        {{ end }}
+        </div>
     {{ end }}
 {{ end }}
 {{ if .Params.cta_block.enabled }}

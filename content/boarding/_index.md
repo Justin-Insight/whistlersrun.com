@@ -135,7 +135,7 @@ facility_amenities_block:
     - Brand new hunter/jumper equipment
   button:
     enabled: true
-    button_url: /life-on-the-farm/
+    button_url: /about/see-the-barn/
     button_text: View our barn
   text_column_left: false
   text_column_right: true

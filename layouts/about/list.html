@@ -19,7 +19,9 @@
                 {{ end }}
                 {{ if .image.enabled }}
                     {{ with .image }}
-                        <img src="{{ .image_url }}" alt="{{ .image_alt }}" style="max-width: 700px; margin: 1.25rem auto;">
+                        <div class="image-background p-relative">
+                            <img src="{{ .image_url }}" alt="{{ .image_alt }}" style="max-width: 700px; margin: 1.25rem auto;" class="shadow-xl">
+                        </div>
                     {{ end }}
                 {{ end }}
                 </div>

@@ -1,0 +1,22 @@
+.card {
+    &__image {
+        height: 275px;
+    }
+
+    &__body {
+        background-color: rgba(255,255,255,.7);
+        padding: $ic-200;
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        top: -40px;
+        flex: 1;
+        display: flex;
+    }
+
+    &__body-inner {
+        border: 1px solid #f3f9ff;
+        padding: $ic-200;
+        flex: 1;
+    }
+}

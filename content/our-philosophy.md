@@ -1,5 +1,7 @@
 ---
 title: Our Philosophy
+layout: our-philosophy
+url: /about/our-philosophy/
 seo:
   page_title: Barn philosophy
   meta_description: Each animal at Whistler’s Run and Rescue receives the utmost respect and is cared for with the gentle, natural husbandry approach they deserve.
