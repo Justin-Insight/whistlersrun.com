@@ -1,6 +1,6 @@
 ---
-title: Our Philosophy
-layout: tour
+title: Schedule a Tour
+layout: schedule-a-tour
 seo:
   page_title:
   meta_description: Calling all animal lovers! Meet our animals and create a meaningful, educational experience for your group with a private tour of Whistler’s Run.
@@ -10,6 +10,10 @@ hero:
   image:
     image_url: /uploads/horse-boarding-in-depere-wi.jpg
     image_alt:
+  button:
+    enabled: true
+    button_url: "#schedule-tour"
+    button_text: Schedule a tour
 intro:
   enabled: true
   heading:
@@ -39,6 +43,7 @@ page_blocks:
       image_alt:
     footprints: left
     background_color: gray
+    css_class: animal-lovers
   - heading: Before your visit
     body: "To ensure your safety, as well as the safety and comfort of our animals, visitors must submit the following liability contract prior to arriving at Whistler’s Run."
     button:

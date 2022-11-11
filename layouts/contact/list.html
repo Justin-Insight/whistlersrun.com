@@ -1,13 +1,9 @@
 {{ define "main" }}
 {{ partial "hero" . }}
-{{ partial "intro" . }}
-<div class="contact-content block">
+{{ partial "contact/intro" . }}
+<div class="contact-content block bg-gray">
   <div class="wrapper">
-    <div class="contact-form">
-      <div class="contact-form__wrapper">
-        {{ partialCached "forms/contact-form" . }}
-      </div>
-    </div>
+    {{ partialCached "forms/contact-form" . }}
   </div>
 </div>
 {{ end }}

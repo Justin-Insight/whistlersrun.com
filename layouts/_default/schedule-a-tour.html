@@ -1,0 +1,13 @@
+{{ define "main" }}
+{{ partial "hero" . }}
+{{ if .Params.page_blocks }}
+  {{ range .Params.page_blocks }}
+    {{ partial "page-block" . }}
+  {{ end }}
+{{ end }}
+<div class="contact-content block bg-gray">
+  <div class="wrapper">
+    {{ partialCached "forms/schedule-tour" . }}
+  </div>
+</div>
+{{ end }}

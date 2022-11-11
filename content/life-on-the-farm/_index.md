@@ -25,5 +25,5 @@ cta_block:
   button:
     enabled: true
     button_url: /boarding/
-    button_text: Boarding
+    button_text: Our boarding services
 ---

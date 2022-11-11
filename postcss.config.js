@@ -40,6 +40,7 @@ module.exports = {
         'grid-4',
         'grid-5',
         'grid-6',
+        'animal-lovers',
       ],
     }),
   ],

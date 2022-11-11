@@ -44,8 +44,8 @@ page_blocks:
       enabled: true
       button_url: /about/our-philosophy/
       button_text: Our philosophy
-    text_column_left: false
-    text_column_right: true
+    text_column_left: true
+    text_column_right: false
     image:
       enabled: true
       image_url: /uploads/horses-and-dog-out-in-field.jpg
@@ -59,8 +59,8 @@ page_blocks:
       enabled: false
       button_url: /about/animals/
       button_text: Meet the animals
-    text_column_left: true
-    text_column_right: false
+    text_column_left: false
+    text_column_right: true
     image:
       enabled: true
       image_url: /uploads/horses-and-dog-out-in-field.jpg

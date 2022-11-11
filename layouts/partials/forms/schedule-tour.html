@@ -1,47 +1,51 @@
-<form method="post" name="Contact Whistler's Run & Rescue" action="/thank-you/">
-    <div class="visually-hidden">
-        <label for="_subject">New form submission from the whistlersrun.com website contact form</label>
-        <input aria-label="subject" id="_subject" name="_subject" value="New form submission from the whistlersrun.com website contact form"/>
-    </div>
-    <div class="contact-form__form-row">
-        <div class="contact-form__row-wrapper">
+<div id="schedule-tour" class="contact-form shadow-xl">
+    <div class="contact-form__wrapper">
+        <form method="post" name="Tour Whistler's Run & Rescue" action="/thank-you/">
+            <div class="visually-hidden">
+                <label for="_subject">New tour request from the whistlersrun.com website contact form</label>
+                <input aria-label="subject" id="_subject" name="_subject" value="New tour request from the whistlersrun.com website contact form"/>
+            </div>
+            <div class="contact-form__form-row">
+                <div class="contact-form__row-wrapper">
+                    <div class="contact-form__form-group">
+                        <label for="first_name">First Name *</label>
+                        <input name="first_name" id="first_name" type="text" class="contact-form__form-control" required>
+                    </div>
+                    <div class="contact-form__form-group">
+                        <label for="last_name">Last Name *</label>
+                        <input name="last_name" id="last_name" type="text" class="contact-form__form-control" required>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form__form-row">
+                <div class="contact-form__row-wrapper">
+                    <div class="contact-form__form-group">
+                        <label for="email">Email *</label>
+                        <input name="email" id="email" type="email" class="contact-form__form-control" required>
+                    </div>
+                    <div class="contact-form__form-group">
+                        <label for="phone">Phone *</label>
+                        <input name="phone" id="phone" type="tel" class="contact-form__form-control" required>
+                    </div>
+                </div>
+            </div>  
             <div class="contact-form__form-group">
-                <label for="first_name">First Name *</label>
-                <input name="first_name" id="first_name" type="text" class="contact-form__form-control" required>
+                <label for="contact_preference">How would you prefer to be contacted? *</label>
+                <select name="contact_preference" id="contact_preference" class="contact-form__form-control" required>
+                    <option value="">Please choose an option</option>
+                    <option value="Phone">Phone</option>
+                    <option value="Email">Email</option>
+                </select>
             </div>
             <div class="contact-form__form-group">
-                <label for="last_name">Last Name *</label>
-                <input name="last_name" id="last_name" type="text" class="contact-form__form-control" required>
+                <label for="message">What kind of visit are you interested in? *</label>
+                <textarea name="message" id="message" class="contact-form__form-control" rows="4" required></textarea>
             </div>
-        </div>
+            <input type="hidden" name="inbox_key" value="contact_inbox" class="contact-form__inbox-key">
+            <input type="text" name="_gotcha" class="visually-hidden" aria-label="gotcha">
+            <div class="h-captcha" data-sitekey="76e2ee50-8ea6-4ae3-ae8d-d4f222e5683b"></div>
+            <br>
+            <input type="submit" class="contact-form__btn btn btn--primary" value="Send Request">
+        </form>
     </div>
-    <div class="contact-form__form-row">
-        <div class="contact-form__row-wrapper">
-            <div class="contact-form__form-group">
-                <label for="email">Email *</label>
-                <input name="email" id="email" type="email" class="contact-form__form-control" required>
-            </div>
-            <div class="contact-form__form-group">
-                <label for="phone">Phone *</label>
-                <input name="phone" id="phone" type="tel" class="contact-form__form-control" required>
-            </div>
-        </div>
-    </div>  
-    <div class="contact-form__form-group">
-        <label for="contact_preference">How would you prefer to be contacted? *</label>
-        <select name="contact_preference" id="contact_preference" class="contact-form__form-control" required>
-            <option value="">Please choose an option</option>
-            <option value="Phone">Phone</option>
-            <option value="Email">Email</option>
-        </select>
-    </div>
-    <div class="contact-form__form-group">
-        <label for="message">Message *</label>
-        <textarea name="message" id="message" class="contact-form__form-control" rows="4" required></textarea>
-    </div>
-    <input type="hidden" name="inbox_key" value="contact_inbox" class="contact-form__inbox-key">
-    <input type="text" name="_gotcha" class="visually-hidden" aria-label="gotcha">
-    <div class="h-captcha" data-sitekey="76e2ee50-8ea6-4ae3-ae8d-d4f222e5683b"></div>
-    <br>
-    <input type="submit" class="contact-form__btn btn btn-primary" value="Send Request">
-</form>
+  </div>
