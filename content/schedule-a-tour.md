@@ -48,7 +48,7 @@ page_blocks:
     body: "To ensure your safety, as well as the safety and comfort of our animals, visitors must submit the following liability contract prior to arriving at Whistler’s Run."
     button:
       enabled: true
-      button_url: /#/
+      button_url: /uploads/Whistlers-Liability-Form.pdf
       button_text: Liability Contract
     text_column_left: false
     text_column_right: true

@@ -23,6 +23,14 @@
     max-width: clamp(150px, 20vw, 175px);
   }
 
+  &__end {
+    display: none;
+
+    @include breakpoint(md) {
+      display: block;
+    }
+  }
+
   &__nav {
     display: none;
 

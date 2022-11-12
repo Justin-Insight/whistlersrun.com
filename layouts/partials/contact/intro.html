@@ -8,24 +8,6 @@
       {{ end }} 
       {{ if .body }}
           <p class="mt-2">{{ .body | safeHTML }}</p>
-      {{ end }} 
-      {{ if .button.enabled }}
-        <a href="{{ .button.button_url }}" class="btn btn--primary">{{ .button.button_text }}</a>
-      {{ end }} 
-      {{ if .button_2.enabled }}
-        <a href="{{ .button_2.button_url }}" class="btn btn--primary mt-3 mt-0-m ml-3">{{ .button_2.button_text }}</a>
-      {{ end }} 
-      {{ if .boarding_notice }}
-        {{ with .boarding_notice }}
-            <p class="fs-100">{{ .body | markdownify }}</p>
-        {{ end }}
-      {{ end }}
-      {{ if .image.enabled }}
-        {{ with .image }}
-          <div class="image-background p-relative">
-            <img src="{{ .image_url }}" alt="{{ .image_alt }}" style="max-width: 550px; margin: 1.25rem auto;" class="shadow-xl">
-          </div>
-        {{ end }}
       {{ end }}
     </div>
   </section>

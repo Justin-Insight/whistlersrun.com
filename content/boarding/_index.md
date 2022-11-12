@@ -14,7 +14,7 @@ hero:
   body: |-
 
   image:
-    image_url: /uploads/horse-boarding-in-depere-wi.jpg
+    image_url: /uploads/two-horses-with-sunset-behind.jpg
     image_alt:
 intro:
   enabled: true
@@ -30,7 +30,7 @@ intro:
     button_text: Boarding Contract
   button_2:
     enabled: true
-    button_url: /#/
+    button_url: /uploads/Whistlers-Liability-Form.pdf
     button_text: Liability Contract
   boarding_notice:
     enabled: true
@@ -65,7 +65,7 @@ page_blocks:
     text_column_right: false
     image:
       enabled: true
-      image_url: /uploads/horses-and-dog-out-in-field.jpg
+      image_url: /uploads/white-horse-within-indoor-stall.jpg
       image_alt:
     footprints: left
     background_color: gray

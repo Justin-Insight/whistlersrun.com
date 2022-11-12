@@ -20,6 +20,8 @@
             <p class="fs-100">{{ .body | markdownify }}</p>
         {{ end }}
       {{ end }}
+    </div>
+    <div class="wrapper-lg">
       {{ if .image.enabled }}
         {{ with .image }}
           <div class="image-background p-relative">

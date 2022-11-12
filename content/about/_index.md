@@ -74,7 +74,7 @@ about_our_animals_block:
     The animals at Whistler’s come to us in a variety of ways. Some are boarded, some are purchased and some are rescued. Learn more with the graphic below.
   image:
     enabled: true
-    image_url: /uploads/whistlers-screenshot.jpg
+    image_url: /uploads/whistlers-rescue-graphic.jpg
     image_alt:
 cta_block:
   enabled: true
