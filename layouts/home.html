@@ -21,7 +21,7 @@
                     {{ end }}
                 </ul>
                 {{ if .button.enabled }}
-                  <a href="{{ .button.button_url }}" class="btn btn--white">{{ .button.button_text }}</a>
+                  <a href="{{ .button.button_url }}" class="btn btn--white" {{ if .button.open_in_new_tab }} target="_blank" rel="noopener noreferrer nofollower"{{ end }}>{{ .button.button_text }}</a>
                 {{ end }} 
             </div>
             <div class="facility__image w-100 w-50-m background-image">

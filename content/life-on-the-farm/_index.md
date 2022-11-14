@@ -26,4 +26,5 @@ cta_block:
     enabled: true
     button_url: /boarding/
     button_text: Our boarding services
+    open_in_new_tab: false
 ---

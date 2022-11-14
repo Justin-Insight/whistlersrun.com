@@ -25,10 +25,12 @@ intro:
     enabled: true
     button_url: /about/lauren/
     button_text: About Lauren
+    open_in_new_tab: false
   button_2:
     enabled: true
     button_url: /about/alissa/
     button_text: About Alissa
+    open_in_new_tab: false
   boarding_notice:
     enabled: false
     heading:
@@ -44,6 +46,7 @@ page_blocks:
       enabled: true
       button_url: /about/our-philosophy/
       button_text: Our philosophy
+      open_in_new_tab: false
     text_column_left: true
     text_column_right: false
     image:
@@ -59,6 +62,7 @@ page_blocks:
       enabled: false
       button_url: /about/animals/
       button_text: Meet the animals
+      open_in_new_tab: false
     text_column_left: false
     text_column_right: true
     image:
@@ -84,4 +88,5 @@ cta_block:
     enabled: true
     button_url: /schedule-a-tour/
     button_text: Schedule a Tour
+    open_in_new_tab: false
 ---

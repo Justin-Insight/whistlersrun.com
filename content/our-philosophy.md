@@ -22,6 +22,7 @@ intro:
     enabled: false
     button_url:
     button_text:
+    open_in_new_tab: false
   image:
     enabled: true
     image_url: /uploads/welcome-sign.jpg
@@ -78,6 +79,7 @@ health_and_safety_block:
     enabled: true
     button_url: /boarding/
     button_text: Our boarding services
+    open_in_new_tab: false
 cta_block:
   enabled: true
   heading: Visit Whistler’s Run
@@ -86,4 +88,5 @@ cta_block:
     enabled: true
     button_url: /schedule-a-tour/
     button_text: Schedule your visit
+    open_in_new_tab: false
 ---

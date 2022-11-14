@@ -22,10 +22,12 @@ intro:
     enabled: false
     button_url:
     button_text:
+    open_in_new_tab: false
   button_2:
     enabled: false
     button_url:
     button_text:
+    open_in_new_tab: false
 features_and_amenities_block:
   enabled: true
   heading: Barn features and amenities
@@ -42,7 +44,7 @@ features_and_amenities_block:
         image_url: /uploads/indoor-riding-arena-with-hunter-jumper-equipment.jpg
         image_alt:
     - heading: 60 ft. diameter outdoor arena
-      body: Our spacious outdoor riding area is the perfect place to practice your horsemanship while enjoying the fresh air. Here, you will have ample room to lunge, ride and utilize our brand-new hunter/jumper equipment.
+      body: Our spacious outdoor riding area is the perfect place to practice your horsemanship while enjoying the fresh air. Here, you will have ample room to lunge and ride.
       image:
         image_url: /uploads/whistlers-run-60ft-outdoor-riding-arena-2.jpg
         image_alt:
@@ -79,9 +81,7 @@ features_and_amenities_block:
 
         - Automatic waterers 
 
-        - Rubber stall mats 
-
-        - Brand new Burlingham Sports hunter/jumper equipment
+        - Rubber stall mats
       image:
         image_url: /uploads/bathroom-at-whistlers-run.jpg
         image_alt:
@@ -93,12 +93,14 @@ visit_us_block:
     enabled: true
     button_url: /schedule-a-tour/
     button_text: Schedule your tour
+    open_in_new_tab: false
 cta_block:
   enabled: true
   heading: Join the Whistler’s Run family
-  body: Board with a barn you’ll love _almost_ as much as your horse. test
+  body: Board with a barn you’ll love _almost_ as much as your horse.
   button:
     enabled: true
     button_url: /schedule-a-tour/
     button_text: Schedule your visit
+    open_in_new_tab: false
 ---

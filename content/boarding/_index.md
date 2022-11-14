@@ -28,10 +28,12 @@ intro:
     enabled: true
     button_url: /#/
     button_text: Boarding Contract
+    open_in_new_tab: false
   button_2:
     enabled: true
     button_url: /uploads/Whistlers-Liability-Form.pdf
     button_text: Liability Contract
+    open_in_new_tab: true
   boarding_notice:
     enabled: true
     heading:
@@ -61,6 +63,7 @@ page_blocks:
       enabled: false
       button_url:
       button_text:
+      open_in_new_tab: false
     text_column_left: true
     text_column_right: false
     image:
@@ -79,6 +82,7 @@ page_blocks:
       enabled: false
       button_url:
       button_text:
+      open_in_new_tab: false
     text_column_left: false
     text_column_right: true
     image:
@@ -130,13 +134,12 @@ facility_amenities_block:
 
     - Onsite laundry room 
 
-    - Two tack rooms 
-
-    - Brand new hunter/jumper equipment
+    - Two tack rooms
   button:
     enabled: true
     button_url: /about/see-the-barn/
     button_text: View our barn
+    open_in_new_tab: false
   text_column_left: false
   text_column_right: true
   image:
@@ -172,4 +175,5 @@ cta_block:
     enabled: true
     button_url: /schedule-a-tour/
     button_text: Schedule your visit
+    open_in_new_tab: false
 ---

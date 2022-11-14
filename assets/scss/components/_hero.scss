@@ -141,22 +141,19 @@
   }
 }
 
-.hero-not-found {
-  background-image: url("https://baileysharborinn.imgix.net/uploads/lawn-care-services-appleton-wi-9.jpg?auto=format&width=1280&height=480&q=10");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.about-hero,
-.location-hero,
-.contact-hero,
-.page-404-page-not-found {
-  .btn--primary {
-    display: none;
-  }
-}
-
 .parent-page-about .hero--small {
-  height: 35vh;
+  height: 50vh;
   background-position: bottom;
+
+  @include breakpoint(md) {
+    height: 35vh;
+  }
+
+  &__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 300px;
+  }
 }

@@ -6,7 +6,7 @@
         <div class="cta__content-inner text-white text-center flow">
           <h2 class="cta__title">{{ .heading }}</h2>
           <p style="max-width: 600px; margin: 1.25rem auto 0 auto;">{{ .body }}</p>
-          <a class="btn btn--white" href="{{ .button.button_url }}">{{ .button.button_text }}</a>
+          <a class="btn btn--white" href="{{ .button.button_url }}" {{ if .button.open_in_new_tab }} target="_blank" rel="noopener noreferrer nofollower"{{ end }}>{{ .button.button_text }}</a>
         </div>
       </div>
     </div>

@@ -10,7 +10,7 @@
           {{ end }}
           {{ if .button.enabled }}
             {{ with .button }}
-                <a href="{{ .button_url }}" class="btn btn--primary">{{ .button_text }}</a>
+                <a href="{{ .button_url }}" class="btn btn--primary" {{ if .open_in_new_tab }} target="_blank" rel="noopener noreferrer nofollower"{{ end }}>{{ .button_text }}</a>
             {{ end }}
           {{ end }}
       </div>

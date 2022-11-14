@@ -1,4 +1,9 @@
 <section aria-labelledby="hero-heading" class="hero hero--small">
+  {{ if .Params.hero.image }}
+    {{ with .Params.hero.image }}
+      <img src="{{ .image_url }}" alt="{{ .image_alt }}" class="hero--small__image">
+    {{ end }}
+  {{ end }}
   <div class="hero__content shadow-md">
     <div class="hero__content-inner bg-white text-center">
       <h1 id="hero-heading" class="no-margin">{{ .Params.hero.heading }}</h1>

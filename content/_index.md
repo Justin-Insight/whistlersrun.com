@@ -19,10 +19,12 @@ intro:
     enabled: true
     button_url: /schedule-a-tour/
     button_text: Schedule a tour
+    open_in_new_tab: false
   button_2:
     enabled: true
     button_url: /boarding/
     button_text: Boarding services
+    open_in_new_tab: false
   image:
     enabled: true
     image_url: /uploads/animal-group-image.jpg
@@ -42,12 +44,13 @@ our_facility_block:
       icon: /uploads/horse-white.svg
     - feature: Indoor and outdoor wash stations
       icon: /uploads/horse-white.svg
-    - feature: Brand new hunter/jumper equipment
+    - feature: Indoor bathroom
       icon: /uploads/horse-white.svg
   button:
     enabled: true
     button_url: /about/see-the-barn/
     button_text: View our barn
+    open_in_new_tab: false
   image:
     enabled: true
     image_url: /uploads/horse-boarding-and-animal-rescue-depere-wi.jpg
@@ -59,6 +62,7 @@ page_blocks:
       enabled: true
       button_url: /about/our-philosophy/
       button_text: Our philosophy
+      open_in_new_tab: false
     text_column_left: true
     text_column_right: false
     image:
@@ -73,6 +77,7 @@ page_blocks:
       enabled: true
       button_url: /about/
       button_text: Meet our herd
+      open_in_new_tab: false
     text_column_left: false
     text_column_right: true
     image:
@@ -107,4 +112,5 @@ cta_block:
     enabled: true
     button_url: /schedule-a-tour/
     button_text: Schedule your visit
+    open_in_new_tab: false
 ---

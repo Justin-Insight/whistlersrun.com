@@ -5,3 +5,4 @@ site_cta:
     enabled: true
     button_url: /schedule-a-tour/
     button_text: Schedule your visit
+    open_in_new_tab: false

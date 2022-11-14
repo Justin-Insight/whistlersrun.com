@@ -14,6 +14,7 @@ hero:
     enabled: true
     button_url: "#schedule-tour"
     button_text: Schedule a tour
+    open_in_new_tab: false
 intro:
   enabled: true
   heading:
@@ -35,6 +36,7 @@ page_blocks:
       enabled: false
       button_url:
       button_text:
+      open_in_new_tab: false
     text_column_left: true
     text_column_right: false
     image:
@@ -50,6 +52,7 @@ page_blocks:
       enabled: true
       button_url: /uploads/Whistlers-Liability-Form.pdf
       button_text: Liability Contract
+      open_in_new_tab: true
     text_column_left: false
     text_column_right: true
     image:
