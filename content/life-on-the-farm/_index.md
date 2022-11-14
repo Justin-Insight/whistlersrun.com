@@ -12,7 +12,7 @@ seo:
 hero:
   heading: Life on the Farm
   image:
-    image_url: /uploads/horse-boarding-in-depere-wi.jpg
+    image_url: /uploads/three-horses-running-in-outdoor-pasture-at-whistlers-run.jpg
     image_alt:
 intro:
   enabled: true

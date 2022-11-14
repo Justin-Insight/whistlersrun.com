@@ -83,7 +83,7 @@ page_blocks:
     text_column_right: true
     image:
       enabled: true
-      image_url: /uploads/staff-with-dog.jpg
+      image_url: /uploads/black-and-white-horse-grazing-out-in-field.jpg
       image_alt:
     footprints: right
     background_color: white
@@ -141,7 +141,7 @@ facility_amenities_block:
   text_column_right: true
   image:
     enabled: true
-    image_url: /uploads/staff-with-dog.jpg
+    image_url: /uploads/whistlers-run-outdoor-pastures-and-riding-arena.jpg
     image_alt:
   footprints:
   background_color: white
