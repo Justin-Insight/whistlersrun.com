@@ -17,10 +17,6 @@ table,
   max-width: none;
 }
 
-body {
-  font-family: $primary-font;
-}
-
 :focus {
   outline: 2px dashed get-color("primary");
   outline-offset: 0.25rem;

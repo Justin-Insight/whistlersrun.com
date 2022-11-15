@@ -11,7 +11,7 @@ hero:
   body: |-
 
   image:
-    image_url: /uploads/horse-boarding-in-depere-wi.jpg
+    image_url: /uploads/three-horses-together-in-pasture.jpg
     image_alt:
 intro:
   enabled: true

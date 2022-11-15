@@ -8,6 +8,7 @@ textarea {
   font-size: $ic-100;
   font-weight: 400;
   line-height: 1.5;
+  color: $black;
 
   @include breakpoint(sm) {
     font-size: $ic-200;

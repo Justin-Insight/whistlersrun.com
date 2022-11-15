@@ -8,7 +8,7 @@ seo:
 hero:
   heading: Visit Whistler’s Run
   image:
-    image_url: /uploads/horse-boarding-in-depere-wi.jpg
+    image_url: /uploads/three-horses-out-in-pasture-2.jpg
     image_alt:
   button:
     enabled: true
@@ -41,7 +41,7 @@ page_blocks:
     text_column_right: false
     image:
       enabled: true
-      image_url: /uploads/horses-and-dog-out-in-field.jpg
+      image_url: /uploads/white-and-brown-horse-together.jpg
       image_alt:
     footprints: left
     background_color: gray
@@ -57,7 +57,7 @@ page_blocks:
     text_column_right: true
     image:
       enabled: true
-      image_url: /uploads/staff-with-dog.jpg
+      image_url: /uploads/young-boy-kissing-white-horse.jpg
       image_alt:
     footprints: right
     background_color: white

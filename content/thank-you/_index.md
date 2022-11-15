@@ -1,5 +1,6 @@
 ---
 title: Thank You
+layout: thank-you
 seo:
   page_title:
   meta_description:
@@ -7,8 +8,6 @@ seo:
 hero:
   heading: Thank You
   image:
-    image_url: baileys-harbor-schoolhouse-inn-front-exterior-night.jpg
+    image_url:
     image_alt:
 ---
-
-Thank you for your interest in staying with us at Baileys Harbor Schoolhouse Inn. A Baileys Harbor Schoolhouse Inn team member will contact you as soon as possible.

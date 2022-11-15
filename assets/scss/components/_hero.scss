@@ -142,12 +142,9 @@
 }
 
 .parent-page-about .hero--small {
-  height: 50vh;
+  height: 100vh;
   background-position: bottom;
-
-  @include breakpoint(md) {
-    height: 35vh;
-  }
+  max-height: 400px; 
 
   &__image {
     position: absolute;

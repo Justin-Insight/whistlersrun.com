@@ -1,0 +1,32 @@
+{{ if .Params.our_owners.enabled }}
+  {{ with .Params.our_owners }} 
+  <section aria-labelledby="intro-heading" class="intro block">
+    <div class="wrapper text-center flow">
+      {{ if .heading }}
+        {{ partial "generic/heading-centered" . }}
+      {{ end }} 
+      {{ if .body }}
+          {{ .body | safeHTML }}
+      {{ end }} 
+    </div>
+    <div class="wrapper">
+      <div class="grid-2 mt-6">
+        {{ range .owner }}
+        <div class="owner text-center flow">
+          <img src="{{ .image.image_url }}" alt="{{ .image.image_alt }}">
+          <div class="owner__body">
+            <h3 class="no-margin">{{ .heading }}</h3>
+            <p>{{ .title }}</p>
+          </div>
+          {{ if .button }}
+            {{ with .button }}
+              <a href="{{ .button_url }}" class="btn btn--primary" {{ if .open_in_new_tab }} target="_blank" rel="noopener noreferrer nofollower"{{ end }}>{{ .button_text }}</a>
+            {{ end }} 
+          {{ end }} 
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+{{ end }}

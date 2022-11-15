@@ -14,27 +14,32 @@ hero:
   body: |-
 
   image:
-    image_url: /uploads/horse-boarding-in-depere-wi.jpg
+    image_url: /uploads/black-and-white-horse-in-pasture.jpg
     image_alt:
-intro:
+our_owners:
   enabled: true
-  heading:
+  heading: Meet the owners
   body: |-
-    <p>We’re Lauren and Alissa—the sisters, animal advocates and joint barn owners behind Whistler’s Run and Rescue.</p>
-  button:
-    enabled: true
-    button_url: /about/lauren/
-    button_text: About Lauren
-    open_in_new_tab: false
-  button_2:
-    enabled: true
-    button_url: /about/alissa/
-    button_text: About Alissa
-    open_in_new_tab: false
-  boarding_notice:
-    enabled: false
-    heading:
-    body: |-
+    <p style="width: 600px; margin: 1.25rem auto;text-align: center;">We’re Lauren and Alissa—the sisters, animal advocates and joint barn owners behind Whistler’s Run and Rescue.</p>
+  owner:
+    - heading: Lauren Underhill
+      title: Barn Owner
+      image:
+        image_url: /uploads/lauren-underhill.jpg
+        image_alt:
+      button:
+        button_url: /about/lauren/
+        button_text: About Lauren
+        open_in_new_tab: false
+    - heading: Alissa Van Wassenhoven
+      title: Barn Owner
+      image:
+        image_url: /uploads/alissa-van-wassenhoven.jpg
+        image_alt:
+      button:
+        button_url: /about/alissa/
+        button_text: About Alissa
+        open_in_new_tab: false
 page_blocks:
   - heading: About Whistler’s Run
     body: |-
@@ -51,7 +56,7 @@ page_blocks:
     text_column_right: false
     image:
       enabled: true
-      image_url: /uploads/horses-and-dog-out-in-field.jpg
+      image_url: /uploads/two-brown-and-white-horses-with-coats.jpg
       image_alt:
     footprints: left
     background_color: gray
@@ -67,7 +72,7 @@ page_blocks:
     text_column_right: true
     image:
       enabled: true
-      image_url: /uploads/horses-and-dog-out-in-field.jpg
+      image_url: /uploads/three-dogs-running-along-fence.jpg
       image_alt:
     footprints: right
     background_color: white

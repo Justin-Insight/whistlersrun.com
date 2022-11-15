@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{ partial "hero" . }}
-{{ partial "intro" . }}
+{{ partial "about/intro" . }}
 {{ if .Params.page_blocks }}
     {{ range .Params.page_blocks }}
         {{ partial "page-block" . }}
@@ -12,7 +12,7 @@
             <div class="wrapper-lg">
                 <div class="text-center flow">
                 {{ if .heading }}
-                    <h2 id="weather-heading">{{ .heading }}</h2>
+                    {{ partial "generic/heading-centered" . }}
                 {{ end }}
                 {{ if .body }}
                     <p style="max-width: 750px; margin: 1.25rem auto 0 auto;">{{ .body | markdownify }}</p>

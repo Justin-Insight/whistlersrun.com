@@ -12,7 +12,7 @@ seo:
 hero:
   heading: Contact Us
   image:
-    image_url: /uploads/horse-boarding-in-depere-wi.jpg
+    image_url: /uploads/two-brown-horses-in-pasture.jpg
     image_alt:
 intro:
   enabled: true
