@@ -104,8 +104,10 @@
     position: absolute;
     top: $ic-200;
     right: $ic-200;
-    height: $ic-600;
-    width: $ic-600;
+    height: 100%;
+    width: 100%;
+    max-height: $ic-600;
+    max-width: $ic-600;
     border: none;
     background-color: rgba($primary-color, .5);
 
@@ -116,34 +118,32 @@
   }
 
   &__controls-inner {
-    height: $ic-500;
-    width: $ic-500;
-
-    svg {
-      display: none;
-    }
+    height: 100%;
+    width: 100%;
+    max-height: $ic-500;
+    max-width: $ic-500;
   }
 }
 
-// .video-playing {
-//   .play-icon {
-//     display: none;
-//   }
+.video-playing {
+  .play-icon {
+    display: none;
+  }
 
-//   .pause-icon {
-//     display: block;
-//   }
-// }
+  .pause-icon {
+    display: block;
+  }
+}
 
-// .video-paused {
-//   .play-icon {
-//     display: block;
-//   }
+.video-paused {
+  .play-icon {
+    display: block;
+  }
 
-//   .pause-icon {
-//     display: none;
-//   }
-// }
+  .pause-icon {
+    display: none;
+  }
+}
 
 .parent-page-about .hero--small {
   height: 100vh;
