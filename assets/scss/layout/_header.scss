@@ -34,7 +34,7 @@
   &__nav {
     display: none;
 
-    @include breakpoint(lg) {
+    @include breakpoint(md) {
       display: block; 
       width: 100%;
     }
@@ -70,7 +70,7 @@
       }
     }
 
-    @include breakpoint(lg) {
+    @include breakpoint(md) {
       display: none;
     }
   }
@@ -88,6 +88,10 @@
     padding: $ic-100 0;
 
     @include breakpoint(md) {
+      padding: $ic-100;
+    }
+
+    @include breakpoint(lg) {
       padding: $ic-100 $ic-200;
     }
   }
@@ -96,7 +100,7 @@
     padding-right: 0;
   }
 
-  @include breakpoint(lg) {
+  @include breakpoint(md) {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -134,7 +138,7 @@
     transition: transform 0.4s ease-out;
   }
 
-  @include breakpoint(lg) {
+  @include breakpoint(md) {
     &:hover,
     &:focus {
       color: $primary-color;

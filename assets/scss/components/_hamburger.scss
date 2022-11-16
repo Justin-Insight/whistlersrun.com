@@ -16,7 +16,7 @@
   padding: 10px;
   outline: none;
 
-  @include breakpoint(lg) {
+  @include breakpoint(md) {
     display: none;
   }
 }

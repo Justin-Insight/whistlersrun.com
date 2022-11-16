@@ -118,28 +118,32 @@
   &__controls-inner {
     height: $ic-500;
     width: $ic-500;
+
+    svg {
+      display: none;
+    }
   }
 }
 
-.video-playing {
-  .play-icon {
-    display: none;
-  }
+// .video-playing {
+//   .play-icon {
+//     display: none;
+//   }
 
-  .pause-icon {
-    display: block;
-  }
-}
+//   .pause-icon {
+//     display: block;
+//   }
+// }
 
-.video-paused {
-  .play-icon {
-    display: block;
-  }
+// .video-paused {
+//   .play-icon {
+//     display: block;
+//   }
 
-  .pause-icon {
-    display: none;
-  }
-}
+//   .pause-icon {
+//     display: none;
+//   }
+// }
 
 .parent-page-about .hero--small {
   height: 100vh;
