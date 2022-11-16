@@ -5,9 +5,17 @@
     {{ partial "page-block" . }}
   {{ end }}
 {{ end }}
-<div class="contact-content block bg-gray">
-  <div class="wrapper">
-    {{ partialCached "forms/schedule-tour" . }}
-  </div>
-</div>
+{{ if .Params.schedule_your_tour_block.enabled }}
+  {{ with .Params.schedule_your_tour_block }}
+    <div class="contact-content block bg-gray">
+      <div class="wrapper flow">
+        {{ partial "generic/heading-centered" . }}
+        {{ if .body }}
+          {{ .body | safeHTML }}
+        {{ end }}
+        {{ partialCached "forms/schedule-tour" . }}
+      </div>
+    </div>
+  {{ end }}
+{{ end }}
 {{ end }}

@@ -61,14 +61,20 @@
     z-index: 3;
   }
 
+  &__content, &__content-inner {
+    padding: $ic-100;
+
+    @include breakpoint(sm) {
+      padding: $ic-200;
+    }
+  } 
+
   &__content {
     position: absolute; 
-    top: 100%;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: -100px;
-    padding: $ic-200;
-    width: 100%;
+    width: 101%;
     max-width: 63rem;
     margin-inline: auto;
     background-color: rgba($white, .7);
@@ -76,25 +82,15 @@
     h2 {
       max-width: 650px;
     }
+
+    @include breakpoint(md) {
+      bottom: -100px;
+    }
   }
 
   &__content-inner {
     border: 1px solid $light-gray;
-    padding: $ic-200;
   }
-
-  // .arrow-down {
-  //   fill: $light-gray;
-  //   stroke: $light-gray;
-  //   stroke-width: 0;
-  //   position: absolute;
-  //   z-index: 1;
-  //   bottom: $ic-200;
-  //   left: 50%;
-  //   transform: translateX(-50%);
-  //   height: $ic-300;
-  //   width: $ic-300;
-  // }
 
   &__controls,
   &__controls-inner {
@@ -105,12 +101,17 @@
 
   &__controls {
     position: absolute;
-    bottom: $ic-200;
+    top: $ic-200;
     right: $ic-200;
     height: $ic-600;
     width: $ic-600;
     border: none;
     background-color: rgba($primary-color, .5);
+
+    @include breakpoint(md) {
+      top: unset;
+      bottom: $ic-200;
+    }
   }
 
   &__controls-inner {

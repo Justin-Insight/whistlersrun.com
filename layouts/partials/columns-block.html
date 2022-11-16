@@ -1,10 +1,11 @@
-<section class="block bg-{{ .background_color }}">
+<section aria-labelledby="{{ .heading | urlize }}" class="block bg-{{ .background_color }}">
     <div class="wrapper-lg grid-{{ .number_of_columns }}">
       {{ range .columns }}
         <div class="column flow">
-          <h2>{{ .heading }}</h2>
-          <img src="/uploads/fence-separator.svg" alt="" class="separator--fence" width="300" height="27">
-          <p>{{ .body | markdownify }}</p>
+          {{ if .heading }}
+            {{ partial "generic/heading" . }}
+          {{ end }}
+          <p>{{ .body | safeHTML }}</p>
           {{ if .button.enabled }}
             {{ with .button }}
                 <a href="{{ .button_url }}" class="btn btn--primary" {{ if .open_in_new_tab }} target="_blank" rel="noopener noreferrer nofollower"{{ end }}>{{ .button_text }}</a>

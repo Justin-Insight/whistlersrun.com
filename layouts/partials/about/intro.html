@@ -1,6 +1,6 @@
 {{ if .Params.our_owners.enabled }}
   {{ with .Params.our_owners }} 
-  <section aria-labelledby="intro-heading" class="intro block">
+  <section aria-labelledby="{{ .heading | urlize }}" class="intro block">
     <div class="wrapper text-center flow">
       {{ if .heading }}
         {{ partial "generic/heading-centered" . }}

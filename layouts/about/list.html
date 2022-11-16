@@ -8,14 +8,14 @@
 {{ end }}
 {{ if .Params.about_our_animals_block.enabled }}
     {{ with .Params.about_our_animals_block }}
-        <section class="block bg-{{ .background_color }}">
+        <section aria-labelledby="{{ .heading | urlize }}" class="block bg-{{ .background_color }}">
             <div class="wrapper-lg">
                 <div class="text-center flow">
                 {{ if .heading }}
                     {{ partial "generic/heading-centered" . }}
                 {{ end }}
                 {{ if .body }}
-                    <p style="max-width: 750px; margin: 1.25rem auto 0 auto;">{{ .body | markdownify }}</p>
+                    <p style="max-width: 750px; margin: 1.25rem auto 0 auto;">{{ .body | safeHTML }}</p>
                 {{ end }}
                 {{ if .image.enabled }}
                     {{ with .image }}

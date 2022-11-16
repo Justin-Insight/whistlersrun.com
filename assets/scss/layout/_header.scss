@@ -49,7 +49,7 @@
     overflow: hidden;
     transition: 0.3s ease-out;
     height: 0;
-    background: $black;
+    background: $white;
 
     ul {
       padding: 0;
@@ -76,7 +76,7 @@
   }
 
   &__mobile-nav-inner {
-    padding: $ic-900 $ic-300 $ic-300 $ic-300;
+    padding: $ic-1000 $ic-300 $ic-300 $ic-300;
   }
 }
 

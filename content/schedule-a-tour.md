@@ -4,7 +4,7 @@ layout: schedule-a-tour
 seo:
   page_title:
   meta_description: Calling all animal lovers! Meet our animals and create a meaningful, educational experience for your group with a private tour of Whistler’s Run.
-  featured_image:
+  featured_image: /uploads/three-horses-out-in-pasture-2.jpg
 hero:
   heading: Visit Whistler’s Run
   image:
@@ -22,16 +22,14 @@ intro:
 page_blocks:
   - heading: Calling all animal lovers!
     body: >
-      Tour our facility, meet our animals and learn all about our animal advocacy and rescue efforts here at Whistler’s Run. Our engaging, educational tours are perfect for small groups, including: 
+      <p>Tour our facility, meet our animals and learn all about our animal advocacy and rescue efforts here at Whistler’s Run. Our engaging, educational tours are perfect for small groups, including:</p>
 
-
-      - 4-H clubs
-
-      - Scout troops
-
-      - School field trips
-
-      - And more!
+      <ul>
+      <li>4-H clubs</li>
+      <li>Scout troops</li>
+      <li>School field trips</li>
+      <li>And more!</li>
+      </ul>
     button:
       enabled: false
       button_url:
@@ -47,7 +45,8 @@ page_blocks:
     background_color: gray
     css_class: animal-lovers
   - heading: Before your visit
-    body: "To ensure your safety, as well as the safety and comfort of our animals, visitors must submit the following liability contract prior to arriving at Whistler’s Run."
+    body: >-
+      <p>To ensure your safety, as well as the safety and comfort of our animals, visitors must submit the following liability contract prior to arriving at Whistler’s Run.</p>
     button:
       enabled: true
       button_url: /uploads/Whistlers-Liability-Form.pdf
@@ -61,4 +60,9 @@ page_blocks:
       image_alt:
     footprints: right
     background_color: white
+schedule_your_tour_block:
+  enabled: true
+  heading: Schedule your visit
+  body: >-
+    <p class="text-center">Contact us to get your visit on the books.</p>
 ---

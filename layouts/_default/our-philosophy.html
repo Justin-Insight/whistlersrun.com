@@ -6,11 +6,10 @@
         <div class="block bg-gray">
             <div class="wrapper flow">
                 {{ if .heading }}
-                    <h2>{{ .heading }}</h2>
-                    <img src="/uploads/fence-separator.svg" alt="" class="separator--fence" width="300" height="27">
+                    {{ partial "generic/heading" . }}
                 {{ end }}
                 {{ if .body }}
-                    {{ .body | markdownify }}
+                    {{ .body | safeHTML }}
                 {{ end }}
             </div>
         </div>
@@ -18,14 +17,13 @@
 {{ end }}
 {{ if .Params.health_and_safety_block.enabled }}
     {{ with .Params.health_and_safety_block }}
-        <div class="block">
+        <section aria-labelledby="{{ .heading | urlize }}" class="block">
             <div class="wrapper flow">
                 {{ if .heading }}
-                    <h2>{{ .heading }}</h2>
-                    <img src="/uploads/fence-separator.svg" alt="" class="separator--fence" width="300" height="27">
+                    {{ partial "generic/heading" . }}
                 {{ end }}
                 {{ if .body }}
-                    {{ .body | markdownify }}
+                    {{ .body | safeHTML }}
                 {{ end }}
                 {{ if .button.enabled }}
                     {{ with .button }}
@@ -33,7 +31,7 @@
                     {{ end }}
                 {{ end }}
             </div>
-        </div>
+        </section>
     {{ end }}
 {{ end }}
 {{ if .Params.page_blocks }}

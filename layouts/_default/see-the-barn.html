@@ -6,7 +6,7 @@
     <div class="block bg-gray">
         <div class="wrapper-lg">
             {{ if .heading }}
-                <h2 class="text-center">{{ .heading }}</h2>
+                {{ partial "generic/heading-centered" . }}
             {{ end }}
             {{ if .body }}
                 <p class="text-center" style="max-width: 800px; margin: 1.25rem auto;">{{ .body | markdownify }}</p>
@@ -29,7 +29,7 @@
                                             <h3 class="h5">{{ .heading }}</h3>
                                         {{ end }}
                                         {{ if .body }}
-                                            <div class="fs-100">{{ .body | markdownify }}</div>
+                                            <div class="fs-100">{{ .body | safeHTML }}</div>
                                         {{ end }}
                                     </div>
                                 </div>
@@ -50,7 +50,7 @@
                     <h2>{{ .heading }}</h2>
                 {{ end }}
                 {{ if .body }}
-                    <p style="max-width: 800px; margin: 1.25rem auto 0 auto;">{{ .body | markdownify }}</p>
+                    <p style="max-width: 800px; margin: 1.25rem auto 0 auto;">{{ .body | safeHTML }}</p>
                 {{ end }}
                 {{ if .button }}
                     {{ with .button }}

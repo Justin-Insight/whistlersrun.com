@@ -8,11 +8,10 @@
 {{ end }}
 {{ if .Params.weather_protection_block.enabled }}
     {{ with .Params.weather_protection_block }}
-    <section aria-labelledby="weather-heading" class="weather-block block bg-gray">
+    <section aria-labelledby="{{ .heading | urlize }}" class="weather-block block bg-gray">
         <div class="wrapper-lg flow">
             {{ if .heading }}
-                <h2 id="weather-heading" class="text-center">{{ .heading }}</h2>
-                <img src="/uploads/horse-divider.svg" alt="" class="separator--horse">
+                {{ partial "generic/heading-centered" . }}
             {{ end }}
             {{ if .subheading }}
                 <p class="text-center max-width-none">{{ .subheading }}</p>
@@ -25,7 +24,7 @@
                                 <h3>{{ .heading }}</h3>
                             {{end }}
                             {{ if .body }}
-                                {{ .body | markdownify }}
+                                {{ .body | safeHTML }}
                             {{ end }}
                         </div>
                     {{ end }}

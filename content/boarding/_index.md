@@ -8,18 +8,18 @@ menu:
 seo:
   page_title:
   meta_description: Whistler’s Run offers full-service boarding for horses of all breeds, sizes and disciplines on 42 gorgeous acres in De Pere, Wisconsin.
-  featured_image:
+  featured_image: /uploads/two-horses-with-sunset-behind.jpg
 hero:
-  heading: Full-Service Equestrian Boarding in De Pere, WI
-  body: |-
+  heading: Boarding at Whistler's
+  body: >-
 
   image:
     image_url: /uploads/two-horses-with-sunset-behind.jpg
     image_alt:
 intro:
   enabled: true
-  heading:
-  body: |-
+  heading: Full-Service Equestrian Boarding in De Pere, WI
+  body: >-
     <p>Let us make your boarding dreams come true! No matter the breed, size or discipline of your horse, they’ll be readily welcome and expertly cared for at Whistler’s Run.</p>
 
 
@@ -37,28 +37,21 @@ intro:
   boarding_notice:
     enabled: true
     heading:
-    body: |-
-      _At this time, Whistler’s Run is at capacity for boarders. If you’re interested in boarding at our barn, please [contact us](/contact/) to join the waitlist._
+    body: >-
+      <p><em>At this time, Whistler’s Run is at capacity for boarders. If you’re interested in boarding at our barn, please <a href="/contact/">contact us</a> to join the waitlist.</em></p>
 page_blocks:
   - heading: Boarding inclusions
-    body: |-
-      - 14’ x 12’ indoor stall
-
-      - Daily turnout in spacious pastures
-
-      - Daily stall cleaning with fresh shavings
-
-      - Good-quality hay morning and night 
-
-      - Two feedings per day with Tribute feed and top dressing
-
-      - 24/7 emergency response care provided by onsite trainer
-
-      - Protective gear applied as needed (fly masks and sheets, blankets, etc.) 
-
-      - Free access to use the on-site laundry room 
-
-      - Personal tack room locker and saddle rack
+    body: >-
+      <ul>
+      <li>14’ x 12’ indoor stall</li>
+      <li>Daily turnout in spacious pastures</li>
+      <li>Daily stall cleaning with fresh shavings</li>
+      <li>Quality hay morning and night</li>
+      <li>Two feedings per day with Tribute feed and top dressing</li>
+      <li>Protective gear applied as needed (fly masks and sheets, blankets, etc.)</li> 
+      <li>Free access to use the on-site laundry room</li>
+      <li>Personal tack room locker and saddle rack</li>
+      </ul>
     button:
       enabled: false
       button_url:
@@ -73,11 +66,11 @@ page_blocks:
     footprints: left
     background_color: gray
   - heading: Personalized feeding
-    body: |-
-      Healthy and happy horses are our top priority, which is why we carry six types of Tribute feed to ensure your horse gets the best nutrition for their specific needs. We also include top dressing supplements in every feeding, free of charge! 
+    body: >-
+      <p>Healthy and happy horses are our top priority, which is why we carry six types of Tribute feed to ensure your horse gets the best nutrition for their specific needs. We also include top dressing supplements in every feeding, free of charge!</p>
 
 
-      We are happy to accommodate unique feeding specifications, medication administration and supplement add-ins, so long as you provide your own.
+      <p>We are happy to accommodate unique feeding specifications, medication administration and supplement add-ins, so long as you provide your own.</p>
     button:
       enabled: false
       button_url:
@@ -97,44 +90,36 @@ weather_protection_block:
   subheading: Wisconsin weather can be unpredictable, but we’re prepared for the good and bad conditions year-round.
   columns:
     - heading: Spring/Summer
-      body: |-
-        - Industrial indoor fans
-
-        - Horses brought inside during storms and other harsh conditions 
-
-        - Outdoor runs for shade and protection from light rain
-
-        - Fly masks and sheets applied before turnout (when needed)
+      body: >-
+        <ul>
+        <li>Industrial indoor fans</li>
+        <li>Horses brought inside during storms and other harsh conditions </li>
+        <li>Outdoor runs for shade and protection from light rain</li>
+        <li>Fly masks and sheets applied before turnout (when needed)</li>
+        </ul>
     - heading: Fall/Winter
-      body: |-
-        - Anti-freeze automatic waterers 
-
-        - Blankets put on before turnout (when needed)
-
-        - Heated barn and floors (kept at 52 degrees)
+      body: >-
+        <ul>
+        <li>Anti-freeze automatic waterers</li>
+        <li>Blankets put on before turnout (when needed)</li>
+        <li>Heated barn and floors (kept at 52 degrees)</li>
+        </ul>
 facility_amenities_block:
   enabled: true
   heading: Facility amenities
-  body: |-
-    - 25-acre riding trail
-
-    - SIZE indoor arena
-
-    - 60 ft. diameter outdoor arena 
-
-    - Rubber stall mats
-
-    - 12 large pastures
-
-    - 11 dry lots
-
-    - Automatic waterers 
-
-    - Onsite bathroom
-
-    - Onsite laundry room 
-
-    - Two tack rooms
+  body: >-
+    <ul class="two-column-list">
+    <li>25-acre riding trail</li>
+    <li>SIZE indoor arena</li>
+    <li>60 ft. diameter outdoor arena </li>
+    <li>Rubber stall mats</li>
+    <li>12 large pastures</li>
+    <li>11 dry lots</li>
+    <li>Automatic waterers</li>
+    <li>Onsite bathroom</li>
+    <li>Onsite laundry room</li>
+    <li>Two tack rooms</li>
+    </ul>
   button:
     enabled: true
     button_url: /about/see-the-barn/
@@ -148,29 +133,11 @@ facility_amenities_block:
     image_alt:
   footprints:
   background_color: white
-# boarding_notice_block:
-#   enabled: true
-#   heading:
-#   body: |-
-#     At this time, Whistler’s Run is at capacity for boarders. If you’re interested in boarding at our barn, please contact us to join the waitlist.
-
-# contracts_block:
-#   enabled: true
-#   heading: Contracts for boarders
-#   body: |-
-
-#   button:
-#     enabled: true
-#     button_url: /#/
-#     button_text: Boarding Contract
-#   button_2:
-#     enabled: true
-#     button_url: /#/
-#     button_text: Liability Contract
 cta_block:
   enabled: true
   heading: Visit Whistler’s Run
-  body: Calling all animal lovers! We offer private, educational tours for small groups of all ages. Schedule your tour to meet the animals at Whistler’s Run and see our gorgeous facility for yourself.
+  body: >-
+    Calling all animal lovers! We offer private, educational tours for small groups of all ages. Schedule your tour to meet the animals at Whistler’s Run and see our gorgeous facility for yourself.
   button:
     enabled: true
     button_url: /schedule-a-tour/

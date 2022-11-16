@@ -1,6 +1,6 @@
 baseURL = "https://whistlersrun.netlify.app/"
 languageCode = "en-us"
-title = "Baileys Harbor Schoolhouse Inn"
+title = "Whistler's Run & Rescue"
 enableRobotsTXT = true
 disableAliases = true
 # post pagination

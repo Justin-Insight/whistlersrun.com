@@ -3,20 +3,20 @@
 {{ partial "home/home-intro" . }}
 {{ if .Params.our_facility_block.enabled }}
     {{ with .Params.our_facility_block }}
-    <section class="facility page-block bg-primary text-white">
-        <div class="flex flex-column flex-row-m">
+    <section aria-labelledby="{{ .heading | urlize }}" class="facility page-block bg-primary text-white">
+        <div class="flex flex-column-reverse flex-row-m">
             <div class="facility__content w-100 w-50-m block flow text-block">
-                <h2>{{ .heading }}</h2>
-                <p>{{ .body }}</p>
+                <h2 id="{{ .heading | urlize }}">{{ .heading }}</h2>
+                {{ .body | safeHTML }}
                 <ul class="features no-padding">
                     {{ range .features }}
-                    <li class="features__item mb-1 list-style-none flex flex-column flex-center">
+                    <li class="features__item mb-1 list-style-none flex flex-row flex-center">
                         <span class="features__icon">
                             <span class="features__icon-inner">
                                 <img src="{{ .icon }}" alt="">
                             </span>
                         </span>
-                        <p class="fs-100">{{ .feature }}</p>
+                        <p class="fs-100 ml-1">{{ .feature }}</p>
                     </li>
                     {{ end }}
                 </ul>
@@ -44,8 +44,7 @@
     {{ with .Params.gallery }}
     <div class="block bg-white">
         <div class="wrapper-lg">
-            <h2 class="text-center">{{ .heading }}</h2>
-            <img src="/uploads/horse-divider.svg" alt="" class="separator--horse">
+            {{ partial "generic/heading-centered" . }}
             <div class="gallery mt-4">
                 {{ range .images }}
                 <img src="{{ .image_url }}" alt="" class="gallery__image">

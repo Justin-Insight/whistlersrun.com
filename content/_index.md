@@ -1,9 +1,9 @@
 ---
 title: Home
 seo:
-  page_title:
-  meta_description:
-  featured_image:
+  page_title: Horse boarding and animal rescue in De Pere, WI
+  meta_description: Whistler’s Run is an equestrian barn, horse boarding facility and animal rescue located on 42 gorgeous acres just 15 minutes from downtown De Pere!
+  featured_image: /uploads/whistlers-generic-preview-image.jpg
 hero:
   enabled: true
   heading: Where all animals are welcome and loved.
@@ -32,7 +32,8 @@ intro:
 our_facility_block:
   enabled: true
   heading: Our facility
-  body: "With a state-of-the-art equestrian barn and on-site safety features and amenities, you can feel good about the quality of life of each animal in our care. Whistler’s Run visitors and boarders love our:"
+  body: >-
+    <p>With a state-of-the-art equestrian barn and on-site safety features and amenities, you can feel good about the quality of life of each animal in our care. Whistler’s Run visitors and boarders love our:</p>
   features:
     - feature: Heated barn
       icon: /uploads/horse-white.svg
@@ -57,7 +58,8 @@ our_facility_block:
     image_alt:
 page_blocks:
   - heading: A gentle animal husbandry approach
-    body: "Our philosophy is simple: every living creature deserves respect. In everything we do, our top priority is to ensure the creatures who enter our barn feel safe, comfortable and loved—whether they walk in on two feet or four hooves."
+    body: >-
+      <p>Our philosophy is simple: every living creature deserves respect. In everything we do, our top priority is to ensure the creatures who enter our barn feel safe, comfortable and loved—whether they walk in on two feet or four hooves.</p>
     button:
       enabled: true
       button_url: /about/our-philosophy/
@@ -72,7 +74,8 @@ page_blocks:
     footprints: left
     background_color: white
   - heading: Our herd
-    body: "Get to know the owners behind Whistler’s Run and meet each of the animals who make our barn so special."
+    body: >-
+      <p>Get to know the owners behind Whistler’s Run and meet each of the animals who make our barn so special.</p>
     button:
       enabled: true
       button_url: /about/
@@ -107,7 +110,8 @@ gallery:
 cta_block:
   enabled: true
   heading: Visit Whistler’s Run
-  body: Calling all animal lovers! We offer private, educational tours for small groups of all ages. Schedule your tour to meet the animals at Whistler’s Run and see our gorgeous facility for yourself.
+  body: >-
+    Calling all animal lovers! We offer private, educational tours for small groups of all ages. Schedule your tour to meet the animals at Whistler’s Run and see our gorgeous facility for yourself.
   button:
     enabled: true
     button_url: /schedule-a-tour/

@@ -33,18 +33,18 @@ h6 {
 
 h1,
 .h1 {
-  font-size: clamp($ic-400, 4vw, $ic-700);
+  font-size: clamp($ic-300, 4vw, $ic-700);
   max-width: 30ch;
 }
 
 h2,
 .h2 {
-  font-size: clamp($ic-300, 4vw, $ic-500);
+  font-size: clamp($ic-200, 4vw, $ic-500);
 }
 
 h3,
 .h3 {
-  font-size: clamp($ic-300, 4vw, $ic-400);
+  font-size: clamp($ic-200, 4vw, $ic-400);
 }
 
 h4,

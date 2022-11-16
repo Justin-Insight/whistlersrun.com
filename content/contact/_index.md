@@ -8,7 +8,7 @@ menu:
 seo:
   page_title:
   meta_description: Contact us today to schedule a private tour of our barn and meet our animals, board your horse or ask a question about Whistler’s Run and Rescue.
-  featured_image:
+  featured_image: /uploads/two-brown-horses-in-pasture.jpg
 hero:
   heading: Contact Us
   image:
@@ -17,5 +17,6 @@ hero:
 intro:
   enabled: true
   heading: How can we Help?
-  body: If you have any questions about Whistler’s Run, would like to schedule a private tour or join our boarding waitlist, please fill out the contact form below or give us a call at <a href="tel:(920) 918-6800">(920) 918-6800</a>.
+  body: >-
+    <p>If you have any questions about Whistler’s Run, would like to schedule a private tour or join our boarding waitlist, please fill out the contact form below or give us a call at <a href="tel:(920) 918-6800">(920) 918-6800</a>.</p>
 ---

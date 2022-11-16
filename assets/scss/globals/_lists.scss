@@ -17,3 +17,9 @@ ul ol {
 .list-style-none {
   list-style-type: none;
 }
+
+.two-column-list {
+  @include breakpoint(sm) {
+    columns: 2;
+  }
+}
