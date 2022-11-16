@@ -95,8 +95,9 @@
   &__controls,
   &__controls-inner {
     border-radius: 50%;
-    display: grid; 
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__controls {
@@ -117,8 +118,6 @@
   &__controls-inner {
     height: $ic-500;
     width: $ic-500;
-    position: relative;
-    left: -1px;
   }
 }
 
