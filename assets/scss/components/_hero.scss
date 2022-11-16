@@ -6,6 +6,7 @@
 .hero {
   position: relative;
   height: 55vh;
+  max-height: 500px;
   // overflow: hidden;
 
   &__video {
