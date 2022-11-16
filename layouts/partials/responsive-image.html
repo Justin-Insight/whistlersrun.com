@@ -1,11 +1,9 @@
-{{ $image := (.Page.Resources.GetMatch (index .image)) }}
-
 <picture>
-    <source sizes="50vw" srcset="https://baileysharborinn.imgix.net/uploads/{{ .image }}?fm=avif&q=85&height=150&width=200&fit=crop 200w, https://baileysharborinn.imgix.net/uploads/{{ .image }}?fm=avif&q=85&height=300&width=400&fit=crop 400w, https://baileysharborinn.imgix.net/uploads/{{ .image }}?fm=avif&q=85&height=400&width=600&fit=crop 600w, https://baileysharborinn.imgix.net/uploads/{{ .image }}?fm=avif&q=85&height=600&width=800&fit=crop 800w" type="image/avif">
+    <source sizes="(min-width: 993px) 50vw, 100vw" srcset="https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-avif,q-70,w-325,h-250 400w, https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-avif,q-70,w-500,h-350 600w, https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-avif,q-85,w-950,h-650 800w" type="image/avif">
 
-    <source sizes="50vw" srcset="https://baileysharborinn.imgix.net/uploads/{{ .image }}?fm=webp&q=85&height=150&width=200&fit=crop 200w, https://baileysharborinn.imgix.net/uploads/{{ .image }}?fm=webp&q=85&height=300&width=400&fit=crop 400w, https://baileysharborinn.imgix.net/uploads/{{ .image }}?fm=webp&q=85&height=400&width=600&fit=crop 600w, https://baileysharborinn.imgix.net/uploads/{{ .image }}?fm=webp&q=85&height=600&width=800&fit=crop 800w" type="image/webp">
+    <source sizes="(min-width: 993px) 50vw, 100vw" srcset="https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-webp,q-70,w-325,h-250 400w, https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-webp,q-70,w-500,h-350 600w, https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-webp,q-85,w-950,h-650 800w" type="image/webp">
 
-    <source sizes="50vw" srcset="https://baileysharborinn.imgix.net/uploads/{{ .image }}?q=85&height=150&width=200&fit=crop 200w, https://baileysharborinn.imgix.net/uploads/{{ .image }}?q=85&height=300&width=400&fit=crop 400w, https://baileysharborinn.imgix.net/uploads/{{ .image }}?q=85&height=400&width=600&fit=crop 600w, https://baileysharborinn.imgix.net/uploads/{{ .image }}?q=85&height=600&width=800&fit=crop 800w" type="image/jpg">
-    <img loading="lazy"
-        src="https://baileysharborinn.imgix.net/uploads/{{ .image }}" width="500" height="500" alt="{{ .alt }}">
+    <source sizes="(min-width: 993px) 50vw, 100vw" srcset="https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-jpg,q-70,w-325,h-250 400w, https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-jpg,q-70,w-500,h-350 600w, https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-jpg,q-85,w-950,h-650 800w" type="image/jpg">
+
+    <img src="{{ .image_url }}" alt="{{ .alt }}" width="600" height="450">   
 </picture>
