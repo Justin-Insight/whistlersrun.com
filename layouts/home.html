@@ -11,7 +11,11 @@
                 <ul class="features no-padding">
                     {{ range .features }}
                     <li class="features__item mb-1 list-style-none flex flex-row flex-center">
-                        
+                        <span class="features__icon">
+                            <span class="features__icon-inner">
+                                <img src="{{ .icon }}" alt="">
+                            </span>
+                        </span>
                         <p class="fs-100 ml-1">{{ .feature }}</p>
                     </li>
                     {{ end }}
