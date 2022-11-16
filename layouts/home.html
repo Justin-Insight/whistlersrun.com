@@ -11,11 +11,7 @@
                 <ul class="features no-padding">
                     {{ range .features }}
                     <li class="features__item mb-1 list-style-none flex flex-row flex-center">
-                        <span class="features__icon">
-                            <span class="features__icon-inner">
-                                <img src="{{ .icon }}" alt="">
-                            </span>
-                        </span>
+                        
                         <p class="fs-100 ml-1">{{ .feature }}</p>
                     </li>
                     {{ end }}
@@ -35,20 +31,6 @@
     </section>
     {{ end }}
 {{ end }}
-<div class="block p-relative bg-white">
-    <button class="hero__controls video-playing" aria-label="play the video" title="play the video">
-        <div class="hero__controls-inner bg-primary icon-sm fill-white">
-          {{ partialCached "svg-icons/play.svg" . }}
-          {{ partialCached "svg-icons/pause.svg" . }}
-        </div>
-      </button>
-      <span class="features__icon">
-        <span class="features__icon-inner icon-sm fill-white">
-            {{ partialCached "svg-icons/play.svg" . }}
-            {{ partialCached "svg-icons/pause.svg" . }}
-        </span>
-    </span>
-</div>
 {{ if .Params.page_blocks }}
     {{ range .Params.page_blocks }}
         {{ partial "page-block" . }}
