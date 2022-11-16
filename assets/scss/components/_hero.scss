@@ -101,6 +101,7 @@
   }
 
   &__controls {
+    position: absolute;
     top: $ic-200;
     right: $ic-200;
     height: 100%;

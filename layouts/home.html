@@ -35,6 +35,14 @@
     </section>
     {{ end }}
 {{ end }}
+<div class="block p-relative bg-white">
+    <button class="hero__controls video-playing" aria-label="play the video" title="play the video">
+        <div class="hero__controls-inner bg-primary icon-sm fill-white">
+          {{ partialCached "svg-icons/play.svg" . }}
+          {{ partialCached "svg-icons/pause.svg" . }}
+        </div>
+      </button>
+</div>
 {{ if .Params.page_blocks }}
     {{ range .Params.page_blocks }}
         {{ partial "page-block" . }}
