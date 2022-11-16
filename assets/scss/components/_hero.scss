@@ -5,9 +5,13 @@
 
 .hero {
   position: relative;
-  height: 55vh;
-  max-height: 500px;
+  height: 300px;
+  // max-height: 500px;
   // overflow: hidden;
+
+  @include breakpoint(md) {
+    height: 500px; 
+  }
 
   &__video {
     height: 100%;
@@ -30,17 +34,6 @@
       object-fit: cover;
       filter: brightness(1);
     }
-  }
-
-  &__overlay {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(180deg, rgba($black, 0.25) 50%, $black 85%);
   }
 
   &__outer-wrap {
@@ -143,9 +136,8 @@
 }
 
 .parent-page-about .hero--small {
-  height: 100vh;
   background-position: bottom;
-  max-height: 400px; 
+  height: 300px; 
 
   &__image {
     position: absolute;
@@ -153,5 +145,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 300px;
+  }
+
+  @include breakpoint(md) {
+    height: 400px; 
   }
 }
