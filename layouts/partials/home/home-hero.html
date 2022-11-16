@@ -17,12 +17,12 @@
           {{ partialCached "svg-icons/pause.svg" . }}
       </span>
     </span>
-    <button class="hero__controls video-playing" aria-label="play the video" title="play the video">
-      <div class="hero__controls-inner bg-primary icon-sm fill-white">
+    <a href="javascript:void(0);" class="hero__controls video-playing" aria-label="play the video" title="play the video">
+			<div class="hero__controls-inner bg-primary icon-sm fill-white">
         {{ partialCached "svg-icons/play.svg" . }}
         {{ partialCached "svg-icons/pause.svg" . }}
       </div>
-    </button>
+		</a>
   </section>
   {{ end }}
 {{ end }}

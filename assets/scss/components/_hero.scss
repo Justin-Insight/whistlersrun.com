@@ -104,10 +104,8 @@
     position: absolute;
     top: $ic-200;
     right: $ic-200;
-    height: 100%;
-    width: 100%;
-    max-height: $ic-600;
-    max-width: $ic-600;
+    height: $ic-600;
+    width: $ic-600;
     border: none;
     background-color: rgba($primary-color, .5);
 
@@ -118,10 +116,8 @@
   }
 
   &__controls-inner {
-    height: 100%;
-    width: 100%;
-    max-height: $ic-500;
-    max-width: $ic-500;
+    height: $ic-500;
+    width: $ic-500;
   }
 }
 
