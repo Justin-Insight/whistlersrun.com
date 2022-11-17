@@ -15,12 +15,20 @@
                     {{ partial "generic/heading-centered" . }}
                 {{ end }}
                 {{ if .body }}
-                    <p style="max-width: 750px; margin: 1.25rem auto 0 auto;">{{ .body | safeHTML }}</p>
+                    {{ .body | safeHTML }}
                 {{ end }}
                 {{ if .image.enabled }}
                     {{ with .image }}
                         <div class="image-background p-relative">
-                            <img src="{{ .image_url }}" alt="{{ .image_alt }}" style="max-width: 700px; margin: 1.25rem auto;" class="shadow-xl">
+                            <picture>
+                                <source srcset="https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-avif,q-70,w-325 400w, https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-avif,q-70,w-500 600w, https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-avif,q-85,w-700 800w" type="image/avif">
+                            
+                                <source srcset="https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-webp,q-70,w-325 400w, https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-webp,q-70,w-500 600w, https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-webp,q-85,w-700 800w" type="image/webp">
+                            
+                                <source srcset="https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-jpg,q-70,w-325 400w, https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-jpg,q-70,w-500 600w, https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-jpg,q-85,w-700 800w" type="image/jpg">
+                            
+                                <img src="{{ .image_url }}" alt="{{ .image_alt }}" width="900" height="625" style="max-width: 700px; margin: 1.25rem auto;" class="shadow-xl">   
+                            </picture>
                         </div>
                     {{ end }}
                 {{ end }}

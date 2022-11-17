@@ -1,7 +1,15 @@
 <section aria-labelledby="hero-heading" class="hero hero--small">
   {{ if .Params.hero.image }}
     {{ with .Params.hero.image }}
-      <img src="{{ .image_url }}" alt="{{ .image_alt }}" class="hero--small__image">
+      <picture>
+        <source srcset="https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-avif,q-80,w-300,h-300" type="image/avif">
+    
+        <source srcset="https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-webp,q-80,w-300,h-300" type="image/webp">
+    
+        <source srcset="https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-jpg,q-80,w-300,h-300" type="image/jpg">
+    
+        <img src="{{ .image_url }}" alt="{{ .image_alt }}" width="500" height="500" class="hero--small__image">   
+      </picture>
     {{ end }}
   {{ end }}
   <div class="hero__content shadow-md">

@@ -9,11 +9,15 @@
           {{ .body | safeHTML }}
       {{ end }} 
       {{ if .button.enabled }}
-        <a href="{{ .button.button_url }}" class="btn btn--primary" {{ if .button.open_in_new_tab }} target="_blank" rel="noopener noreferrer nofollower"{{ end }}>{{ .button.button_text }}</a>
-      {{ end }} 
-      {{ if .button_2.enabled }}
-        <a href="{{ .button_2.button_url }}" class="btn btn--primary mt-3 mt-0-m ml-3-m" {{ if .button_2.open_in_new_tab }} target="_blank" rel="noopener noreferrer nofollower"{{ end }}>{{ .button_2.button_text }}</a>
-      {{ end }} 
+          <div class="flex flex-column flex-row-m">
+          {{ if .button.enabled }}
+            <a href="{{ .button.button_url }}" class="btn btn--primary" {{ if .button.open_in_new_tab }} target="_blank" rel="noopener noreferrer nofollower"{{ end }}>{{ .button.button_text }}</a>
+          {{ end }} 
+          {{ if .button_2.enabled }}
+            <a href="{{ .button_2.button_url }}" class="btn btn--primary mt-3 mt-0-m ml-3-m" {{ if .button_2.open_in_new_tab }} target="_blank" rel="noopener noreferrer nofollower"{{ end }}>{{ .button_2.button_text }}</a>
+          {{ end }} 
+          </div>
+      {{ end }}
       {{ if .boarding_notice }}
         {{ with .boarding_notice }}
             <p class="fs-100">{{ .body | safeHTML }}</p>

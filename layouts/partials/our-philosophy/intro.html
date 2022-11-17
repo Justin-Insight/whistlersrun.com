@@ -1,0 +1,23 @@
+{{ if .Params.intro.enabled }}
+  {{ with .Params.intro }} 
+  <section aria-labelledby="{{ .heading | urlize }}" class="intro block">
+    <div class="wrapper flow">
+      {{ if .heading }}
+        {{ partial "generic/heading-centered" . }}
+      {{ end }} 
+      {{ if .body }}
+          {{ .body | safeHTML }}
+      {{ end }}
+    </div>
+    <div class="wrapper-lg">
+      {{ if .image.enabled }}
+        {{ with .image }}
+          <div class="image-background p-relative">
+            <img src="{{ .image_url }}" alt="{{ .image_alt }}" style="max-width: 550px; margin: 1.25rem auto;" class="shadow-xl">
+          </div>
+        {{ end }}
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+{{ end }}

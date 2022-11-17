@@ -10,6 +10,7 @@
   padding: $ic-100 $ic-400;
   text-decoration: none;
   transition: 0.3s ease-out;
+  width: max-content;
 
   &::after {
     content: "";

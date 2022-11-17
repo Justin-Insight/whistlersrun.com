@@ -27,7 +27,15 @@
             <div class="facility__image w-100 w-50-m background-image">
                 {{ if .image.enabled }}
                     {{ with .image }}
-                        <img src="{{ .image_url }}" alt="{{ .image_alt }}">
+                    <picture>
+                        <source sizes="100vw" srcset="https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-avif,q-70,w-500,h-350 400w, https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-avif,q-70,w-750,h-500 800w, https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-avif,q-85,w-950,h-700 1200w" type="image/avif">
+                    
+                        <source sizes="100vw" srcset="https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-webp,q-70,w-500,h-350 400w, https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-webp,q-70,w-750,h-500 800w, https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-webp,q-85,w-950,h-700 1200w" type="image/webp">
+                    
+                        <source sizes="100vw" srcset="https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-jpg,q-70,w-500,h-350 400w, https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-jpg,q-70,w-750,h-500 800w, https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-jpg,q-85,w-950,h-700 1200w" type="image/jpg">
+                    
+                        <img src="{{ .image_url }}" alt="{{ .image_alt }}" width="900" height="625">   
+                    </picture>
                     {{ end }}
                 {{ end }}
             </div>
@@ -47,7 +55,15 @@
             {{ partial "generic/heading-centered" . }}
             <div class="gallery mt-4">
                 {{ range .images }}
-                <img src="{{ .image_url }}" alt="" class="gallery__image">
+                    <picture class="gallery__image">
+                        <source srcset="https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-avif,q-70,w-450,h-300 400w, https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-avif,q-70,w-500,h-300 800w, https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-avif,q-85,w-800,h-550 1200w, https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-avif,q-85,w-1200,h-800 1600w" type="image/avif">
+                    
+                        <source srcset="https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-webp,q-70,w-450,h-300 400w, https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-webp,q-70,w-500,h-300 800w, https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-webp,q-85,w-800,h-550 1200w, https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-webp,q-85,w-1200,h-800 1600w" type="image/webp">
+                    
+                        <source srcset="https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-jpg,q-70,w-500,h-350 400w, https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-jpg,q-70,w-750,h-500 800w, https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-jpg,q-85,w-800,h-550 1200w, https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-jpg,q-85,w-1200,h-800 1600w" type="image/jpg">
+                    
+                        <img src="{{ .image_url }}" alt="{{ .image_alt }}" width="900" height="625">   
+                    </picture>
                 {{ end }}
             </div>
         </div>

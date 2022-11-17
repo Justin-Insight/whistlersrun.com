@@ -80,7 +80,7 @@ about_our_animals_block:
   enabled: true
   heading: About our animals
   body: >-
-    <p>The animals at Whistler’s come to us in a variety of ways. Some are boarded, some are purchased and some are rescued. Learn more with the graphic below.</p>
+    <p style="max-width: 750px; margin: 1.25rem auto 0 auto;">The animals at Whistler’s come to us in a variety of ways. Some are boarded, some are purchased and some are rescued. Learn more with the graphic below.</p>
   image:
     enabled: true
     image_url: /uploads/whistlers-rescue-graphic.jpg
