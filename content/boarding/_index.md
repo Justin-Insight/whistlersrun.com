@@ -23,7 +23,7 @@ intro:
     <p>Let us make your boarding dreams come true! No matter the breed, size or discipline of your horse, they’ll be readily welcome and expertly cared for at Whistler’s Run.</p>
 
 
-    <p>You don’t have to choose between good, better or best when you board with us. We offer one, all-inclusive boarding service for a monthly fee of $500.</p>
+    <p>You don’t have to choose between good, better or best when you board with us. We offer one, all-inclusive boarding service for a monthly fee of $600.</p>
   button:
     enabled: true
     button_url: /#/
@@ -34,11 +34,6 @@ intro:
     button_url: /uploads/Whistlers-Liability-Form.pdf
     button_text: Liability Contract
     open_in_new_tab: true
-  boarding_notice:
-    enabled: true
-    heading:
-    body: >-
-      <p><em>At this time, Whistler’s Run is at capacity for boarders. If you’re interested in boarding at our barn, please <a href="/contact/">contact us</a> to join the waitlist.</em></p>
 page_blocks:
   - heading: Boarding inclusions
     body: >-
