@@ -7,23 +7,25 @@ menu:
     weight: 1
 seo:
   page_title:
-  meta_description: Whistler’s Run offers full-service boarding for horses of all breeds, sizes and disciplines on 42 gorgeous acres in De Pere, Wisconsin.
+  meta_description: >-
+    Whistler’s Run offers full-service boarding for horses of all breeds, sizes
+    and disciplines on 42 gorgeous acres in De Pere, Wisconsin.
   featured_image: /uploads/two-horses-with-sunset-behind.jpg
 hero:
   heading: Boarding at Whistler's
-  body: >-
-
+  body:
   image:
     image_url: /uploads/two-horses-with-sunset-behind.jpg
-    image_alt:
+    image_alt: Two horses together with clear sky sunset in the background
 intro:
   enabled: true
   heading: Full-Service Equestrian Boarding in De Pere, WI
   body: >-
-    <p>Let us make your boarding dreams come true! No matter the breed, size or discipline of your horse, they’ll be readily welcome and expertly cared for at Whistler’s Run.</p>
-
-
-    <p>You don’t have to choose between good, better or best when you board with us. We offer one, all-inclusive boarding service for a monthly fee of $600.</p>
+    <p>Let us make your boarding dreams come true! No matter the breed, size or
+    discipline of your horse, they&rsquo;ll be readily welcome and expertly
+    cared for at Whistler&rsquo;s Run.</p><p>You don&rsquo;t have to choose
+    between good, better or best when you board with us. We offer one,
+    all-inclusive boarding service for a monthly fee of $600.</p>
   button:
     enabled: true
     button_url: /#/
@@ -37,16 +39,13 @@ intro:
 page_blocks:
   - heading: Boarding inclusions
     body: >-
-      <ul>
-      <li>14’ x 12’ indoor stall</li>
-      <li>Daily turnout in spacious pastures</li>
-      <li>Daily stall cleaning with fresh shavings</li>
-      <li>Quality hay morning and night</li>
-      <li>Two feedings per day with Tribute feed and top dressing</li>
-      <li>Protective gear applied as needed (fly masks and sheets, blankets, etc.)</li> 
-      <li>Free access to use the on-site laundry room</li>
-      <li>Personal tack room locker and saddle rack</li>
-      </ul>
+      <ul><li>14&rsquo; x 12&rsquo; indoor stall</li><li>Daily turnout in
+      spacious pastures</li><li>Daily stall cleaning with fresh
+      shavings</li><li>Quality hay morning and night</li><li>Two feedings per
+      day with Tribute feed and top dressing</li><li>Protective gear applied as
+      needed (fly masks and sheets, blankets, etc.)</li><li>Free access to use
+      the on-site laundry room</li><li>Personal tack room locker and saddle
+      rack</li></ul>
     button:
       enabled: false
       button_url:
@@ -57,15 +56,19 @@ page_blocks:
     image:
       enabled: true
       image_url: /uploads/white-horse-within-indoor-stall.jpg
-      image_alt:
+      image_alt: >-
+        White horse in one of the 14’ x 12’ indoor stalls at Whistler's Run in
+        DePere, WI
     footprints: left
     background_color: gray
   - heading: Personalized feeding
     body: >-
-      <p>Healthy and happy horses are our top priority, which is why we carry six types of Tribute feed to ensure your horse gets the best nutrition for their specific needs. We also include top dressing supplements in every feeding, free of charge!</p>
-
-
-      <p>We are happy to accommodate unique feeding specifications, medication administration and supplement add-ins, so long as you provide your own.</p>
+      <p>Healthy and happy horses are our top priority, which is why we carry
+      six types of Tribute feed to ensure your horse gets the best nutrition for
+      their specific needs. We also include top dressing supplements in every
+      feeding, free of charge!</p><p>We are happy to accommodate unique feeding
+      specifications, medication administration and supplement add-ins, so long
+      as you provide your own.</p>
     button:
       enabled: false
       button_url:
@@ -76,45 +79,38 @@ page_blocks:
     image:
       enabled: true
       image_url: /uploads/black-and-white-horse-grazing-out-in-field.jpg
-      image_alt:
+      image_alt: >-
+        Horses grazing during daily turnout time in one of twelve spacious
+        pastures at Whistler's Run
     footprints: right
     background_color: white
 weather_protection_block:
   enabled: true
   heading: Year-round weather protection
-  subheading: Wisconsin weather can be unpredictable, but we’re prepared for the good and bad conditions year-round.
+  subheading: >-
+    Wisconsin weather can be unpredictable, but we’re prepared for the good and
+    bad conditions year-round.
   columns:
     - heading: Spring/Summer
       body: >-
-        <ul>
-        <li>Industrial indoor fans</li>
-        <li>Horses brought inside during storms and other harsh conditions </li>
-        <li>Outdoor runs for shade and protection from light rain</li>
-        <li>Fly masks and sheets applied before turnout (when needed)</li>
-        </ul>
+        <ul> <li>Industrial indoor fans</li> <li>Horses brought inside during
+        storms and other harsh conditions </li> <li>Outdoor runs for shade and
+        protection from light rain</li> <li>Fly masks and sheets applied before
+        turnout (when needed)</li> </ul>
     - heading: Fall/Winter
       body: >-
-        <ul>
-        <li>Anti-freeze automatic waterers</li>
-        <li>Blankets put on before turnout (when needed)</li>
-        <li>Heated barn and floors (kept at 52 degrees)</li>
-        </ul>
+        <ul> <li>Anti-freeze automatic waterers</li> <li>Blankets put on before
+        turnout (when needed)</li> <li>Heated barn and floors (kept at 52
+        degrees)</li> </ul>
 facility_amenities_block:
   enabled: true
   heading: Facility amenities
   body: >-
-    <ul class="two-column-list">
-    <li>25-acre riding trail</li>
-    <li>SIZE indoor arena</li>
-    <li>60 ft. diameter outdoor arena </li>
-    <li>Rubber stall mats</li>
-    <li>12 large pastures</li>
-    <li>11 dry lots</li>
-    <li>Automatic waterers</li>
-    <li>Onsite bathroom</li>
-    <li>Onsite laundry room</li>
-    <li>Two tack rooms</li>
-    </ul>
+    <ul class="two-column-list"><li>25-acre riding trail</li><li>Indoor
+    arena</li><li>60 ft. diameter outdoor arena</li><li>Rubber stall
+    mats</li><li>12 large pastures</li><li>11 dry lots</li><li>Automatic
+    waterers</li><li>Onsite bathroom</li><li>Onsite laundry room</li><li>Two
+    tack rooms</li></ul>
   button:
     enabled: true
     button_url: /about/see-the-barn/
@@ -125,14 +121,16 @@ facility_amenities_block:
   image:
     enabled: true
     image_url: /uploads/whistlers-run-outdoor-pastures-and-riding-arena.jpg
-    image_alt:
+    image_alt: Twelve large pastures at Whistler's Run & Rescue in DePere, WI
   footprints:
   background_color: white
 cta_block:
   enabled: true
   heading: Visit Whistler’s Run
   body: >-
-    Calling all animal lovers! We offer private, educational tours for small groups of all ages. Schedule your tour to meet the animals at Whistler’s Run and see our gorgeous facility for yourself.
+    <p>Calling all animal lovers! We offer private, educational tours for small
+    groups of all ages. Schedule your tour to meet the animals at
+    Whistler&rsquo;s Run and see our gorgeous facility for yourself.</p>
   button:
     enabled: true
     button_url: /schedule-a-tour/
