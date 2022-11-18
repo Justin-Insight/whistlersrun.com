@@ -6,8 +6,6 @@
 .hero {
   position: relative;
   height: 300px;
-  // max-height: 500px;
-  // overflow: hidden;
 
   @include breakpoint(md) {
     height: 450px; 

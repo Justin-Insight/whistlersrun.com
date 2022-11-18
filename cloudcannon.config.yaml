@@ -45,3 +45,5 @@ _inputs:
     type: url
   hero.button_url:
     type: url
+  cta.body:
+    type: markdown

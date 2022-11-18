@@ -28,7 +28,7 @@ our_owners:
     - heading: Lauren Underhill
       title: Barn Owner
       image:
-        image_url: /uploads/lauren-underhill.jpg
+        image_url: /uploads/lauren-underhill-with-white-horse.jpg
         image_alt: Lauren Underhill with white horse
       button:
         button_url: /about/lauren/

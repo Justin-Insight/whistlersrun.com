@@ -1,6 +1,5 @@
 .contact-form {
     background-color: $white;
-    // box-shadow: 8px 8px 48px rgba($primary-color, 0.25);
 
     &__wrapper {
       padding: $ic-200;
@@ -33,11 +32,6 @@
   
     &__form-group label {
       flex: 0 0 25%;
-      // font-family: $secondary-font;
-      // font-size: $ic-100;
-      // text-transform: uppercase;
-      // letter-spacing: 2px;
-      // font-weight: 700;
       color: $black;
     }
   

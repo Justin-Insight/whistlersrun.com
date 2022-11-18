@@ -10,7 +10,7 @@ hero:
   heading: Lauren Underhill
   body: <p>Barn Owner</p>
   image:
-    image_url: /uploads/lauren-underhill.jpg
+    image_url: /uploads/lauren-underhill-with-white-horse.jpg
     image_alt: Lauren Underhill with white horse
 cta_block:
   enabled: true
@@ -24,6 +24,7 @@ cta_block:
     button_text: Contact Us
     open_in_new_tab: false
 ---
+
 Lauren purchased Whistler's Run in May of 2022 in a bold departure from her former career as CEO of CorLife, LLC, a prior business that she recently sold. She owns and operates the barn with her sister [Alissa](/about/alissa/), as well as her husband Nate and their four dogs.
 
 Though working with horses wasn’t her focus for the first part of her career, Lauren has loved and had a passion for animals her entire life. She is an advocate of animal rescue and supports various animal rescues and other organizations throughout the U.S. in addition to caring for the rescue animals at the barn.

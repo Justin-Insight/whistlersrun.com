@@ -4,7 +4,7 @@
 {{ if .Params.our_facility_block.enabled }}
     {{ with .Params.our_facility_block }}
     <section aria-labelledby="{{ .heading | urlize }}" class="facility page-block bg-primary text-white">
-        <div class="flex flex-column-reverse flex-row-m flex-center">
+        <div class="flex flex-column-reverse flex-row-m">
             <div class="facility__content w-100 w-50-m block flow text-block">
                 <h2 id="{{ .heading | urlize }}">{{ .heading }}</h2>
                 {{ .body | safeHTML }}
