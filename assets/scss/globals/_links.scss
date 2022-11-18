@@ -9,7 +9,7 @@ a, .simple-link {
   }
 }
 
-.site-main a:not(.btn, .hero__controls) {
+.site-main a:not(.btn, .hero__controls, .social__icon) {
   color: $primary-color;
   text-decoration: none;
   background-image: linear-gradient($accent-color, $accent-color),linear-gradient(270deg,$primary-color 0%,$primary-color 100%);

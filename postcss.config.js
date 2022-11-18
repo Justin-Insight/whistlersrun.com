@@ -34,6 +34,7 @@ module.exports = {
         'page-contact',
         'page-schedule-a-tour',
         'parent-page-about',
+        'page-thank-you',
         'grid-1',
         'grid-2',
         'grid-3',
