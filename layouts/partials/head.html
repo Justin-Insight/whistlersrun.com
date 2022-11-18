@@ -37,6 +37,10 @@
   <link rel="mask-icon" href="mask-icon.svg" color="#000000">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
+  {{ if (or (eq .Title "Contact") (eq .Title "Schedule a Tour")) }}
+  <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+  {{ end }}
+
   {{ if hugo.IsProduction }}
   
   {{ end }}
