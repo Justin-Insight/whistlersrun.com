@@ -11,6 +11,17 @@
     <main id="main-content" class="site-main">
       {{ block "main" . }}{{ end }}
     </main>
+    {{ if eq .Title "Life on the Farm" }}
+    <!-- Curator.io script -->
+    <script type="text/javascript">
+      /* curator-feed-default-feed-layout */
+      (function(){
+      var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
+      i.src="https://cdn.curator.io/published/2ff3f4fc-90d3-45f3-8c98-ed78a4bdee72.js";
+      e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+      })();
+    </script>
+    {{ end }}
     {{ block "footer" . }}{{ partialCached "footer" . }}{{end}}
   </div>
 </body>

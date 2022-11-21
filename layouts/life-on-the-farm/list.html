@@ -2,7 +2,9 @@
 {{ partial "hero" . }}
 {{ partial "intro" . }}
 <div class="wrapper-lg">
-    <iframe src='https://www.juicer.io/api/feeds/whistlersrun/iframe' frameborder='0' width='1000' height='1000' style='display:block;margin:0 auto;'></iframe>
+    <div id="curator-feed-default-feed-layout">
+        <a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a>
+    </div>
 </div>
 {{ if .Params.cta_block.enabled }}
     {{ with .Params.cta_block }}
@@ -10,3 +12,5 @@
     {{ end }}
 {{ end }}
 {{ end }}
+        
+        
