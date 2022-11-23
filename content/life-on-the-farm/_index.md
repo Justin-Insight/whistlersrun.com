@@ -20,7 +20,7 @@ intro:
   enabled: true
   heading:
   body: >-
-    <p>It’s a good life here at Whistler’s Run! Don’t take our word for it—see
+    <p style="text-align: center;max-width: 825px;margin: 0 auto;">It’s a good life here at Whistler’s Run! Don’t take our word for it—see
     for yourself. Boarders, add your photos to the page using #WhistlersRun on
     Instagram and Facebook.</p>
 cta_block:

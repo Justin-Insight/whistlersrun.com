@@ -6,7 +6,7 @@
     <div class="block bg-gray">
         <div class="wrapper-lg">
             {{ if .heading }}
-                {{ partial "generic/heading-centered" . }}
+                {{ partial "heading-centered" . }}
             {{ end }}
             {{ if .body }}
                 <p class="text-center" style="max-width: 800px; margin: 1.25rem auto;">{{ .body | markdownify }}</p>

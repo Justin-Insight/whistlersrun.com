@@ -6,7 +6,7 @@
         <div class="block bg-gray">
             <div class="wrapper flow">
                 {{ if .heading }}
-                    {{ partial "generic/heading" . }}
+                    {{ partial "heading" . }}
                 {{ end }}
                 {{ if .body }}
                     {{ .body | safeHTML }}
@@ -20,7 +20,7 @@
         <section aria-labelledby="{{ .heading | urlize }}" class="block">
             <div class="wrapper flow">
                 {{ if .heading }}
-                    {{ partial "generic/heading" . }}
+                    {{ partial "heading" . }}
                 {{ end }}
                 {{ if .body }}
                     {{ .body | safeHTML }}

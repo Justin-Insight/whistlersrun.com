@@ -2,7 +2,7 @@
     <div class="wrapper-lg flex flex-column-reverse {{ if .text_column_right }}flex-row-reverse-m{{ end }}{{ if .text_column_left }}flex-row-m{{ end }} flex-center-m">
       <div class="text-block w-100 w-40-m flow mt-3 mt-0-m">
           {{ if .heading }}
-            {{ partial "generic/heading" . }}
+            {{ partial "heading" . }}
           {{ end }}
           {{ if .body }}
             {{ .body | safeHTML }}

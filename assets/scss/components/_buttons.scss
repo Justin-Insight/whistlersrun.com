@@ -3,7 +3,7 @@
   z-index: 1;
   display: inline-block;
   font-family: $secondary-font;
-  font-size: $ic--100;
+  font-size: $ic--200;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 700;
@@ -11,6 +11,10 @@
   text-decoration: none;
   transition: 0.3s ease-out;
   width: max-content;
+
+  @include breakpoint(sm) {
+    font-size: $ic--100;
+  }
 
   &::after {
     content: "";

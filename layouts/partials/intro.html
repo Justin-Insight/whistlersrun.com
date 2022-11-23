@@ -3,7 +3,7 @@
   <section aria-labelledby="{{ .heading | urlize }}" class="intro block">
     <div class="wrapper flow">
       {{ if .heading }}
-        {{ partial "generic/heading" . }}
+        {{ partial "heading" . }}
       {{ end }} 
       {{ if .body }}
           {{ .body | safeHTML }}

@@ -30,7 +30,7 @@ intro:
     open_in_new_tab: false
   image:
     enabled: true
-    image_url: /uploads/welcome-sign.jpg
+    image_url: /uploads/welcome-sign-final.jpg
     image_alt: Whistler's Run barn welcome sign
 natural_horsemanship_block:
   enabled: true

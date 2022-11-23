@@ -3,7 +3,7 @@
   <section aria-labelledby="{{ .heading | urlize }}" class="intro block text-center">
     <div class="wrapper">
       {{ if .heading }}
-        {{ partial "generic/heading-centered" . }}
+        {{ partial "heading-centered" . }}
       {{ end }} 
       {{ if .body }}
           <p class="mt-2">{{ .body | safeHTML }}</p>

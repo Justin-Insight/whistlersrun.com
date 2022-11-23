@@ -3,7 +3,7 @@
       {{ range .columns }}
         <div class="column flow">
           {{ if .heading }}
-            {{ partial "generic/heading" . }}
+            {{ partial "heading" . }}
           {{ end }}
           <p>{{ .body | safeHTML }}</p>
           {{ if .button.enabled }}

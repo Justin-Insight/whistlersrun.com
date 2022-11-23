@@ -4,7 +4,7 @@
     <div class="wrapper-lg flex flex-column flex-row-m">
       <div class="w-100 w-50-m flow">
         {{ if .heading }}
-          {{ partial "generic/heading" . }}
+          {{ partial "heading" . }}
         {{ end }} 
         {{ if .body }}
           {{ .body | safeHTML }}

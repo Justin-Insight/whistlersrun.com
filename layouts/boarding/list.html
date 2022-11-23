@@ -11,7 +11,7 @@
     <section aria-labelledby="{{ .heading | urlize }}" class="weather-block block bg-gray">
         <div class="wrapper-lg flow">
             {{ if .heading }}
-                {{ partial "generic/heading-centered" . }}
+                {{ partial "heading-centered" . }}
             {{ end }}
             {{ if .subheading }}
                 <p class="text-center max-width-none">{{ .subheading }}</p>

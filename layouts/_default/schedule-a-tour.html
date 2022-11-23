@@ -9,7 +9,9 @@
   {{ with .Params.schedule_your_tour_block }}
     <div class="contact-content block bg-gray">
       <div class="wrapper flow">
-        {{ partial "generic/heading-centered" . }}
+        {{ if .heading }}
+          {{ partial "heading-centered" . }}
+        {{ end }}
         {{ if .body }}
           {{ .body | safeHTML }}
         {{ end }}
