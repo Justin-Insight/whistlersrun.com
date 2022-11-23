@@ -14,6 +14,7 @@
                 <div class="block-sm">
                     <div class="flex flex-column flex-row-m flex-center">
                         <div class="w-100 w-30-m">
+                            {{ with .image }}
                             <picture>
                                 <source sizes="(min-width: 993px) 50vw, 100vw" srcset="https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-avif,q-70,w-325,h-325 400w, https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-avif,q-70,w-700,h-700 600w, https://ik.imagekit.io/whistlersrun{{ .image_url }}?tr=f-avif,q-85,w-400,h-650 400w" type="image/avif">
 
@@ -23,6 +24,7 @@
                             
                                 <img src="{{ .image_url }}" alt="{{ .image_alt }}" width="400" height="400">   
                             </picture>
+                            {{ end }}
                         </div>
                         <div class="w-100 w-70-m mt-3 mt-0-m ml-3-m flow">
                             <h3>{{ .heading }}</h3>
