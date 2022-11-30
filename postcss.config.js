@@ -45,6 +45,8 @@ module.exports = {
         'crt-widget',
         'crt-logo',
         'crt-widget-branded',
+        'crt-image',
+        'crt-image-c'
       ],
     }),
   ],
