@@ -40,7 +40,7 @@ owners_animals:
       body: >
         <p>This 10-year-old Golden Lab rescue is one of the more reserved animals in Alissa’s pack. Though he’s usually a bit fearful and anxious on the outside, he secretly loves everyone. Gus makes sure everyone knows he’s tough by greeting visitors with a bark, but he warms up quickly (so long as you have some treats or scratches to share).</p>
       image:
-        image_url: /uploads/whistlers-generic-placeholder.jpg
+        image_url: /uploads/gus.jpg
         image_alt:
     - heading: Rufus
       body: >

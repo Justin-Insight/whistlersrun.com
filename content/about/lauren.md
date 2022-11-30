@@ -70,7 +70,7 @@ owners_animals:
       body: >
         <p>The shy dog of the group, Rosie is an independent girl who loves to run in the hay field. She’s also fond of mothering all the boy dogs, even though she’s just six years old.</p>
       image:
-        image_url: /uploads/whistlers-generic-placeholder.jpg
+        image_url: /uploads/rosie.jpg
         image_alt: Rosie
 cta_block:
   enabled: true
