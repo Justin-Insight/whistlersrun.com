@@ -21,11 +21,8 @@ intro:
   enabled: true
   heading: Full-Service Equestrian Boarding in De Pere, WI
   body: >-
-    <p>Let us make your boarding dreams come true! No matter the breed, size or
-    discipline of your horse, they&rsquo;ll be readily welcome and expertly
-    cared for at Whistler&rsquo;s Run.</p><p>You don&rsquo;t have to choose
-    between good, better or best when you board with us. We offer one,
-    all-inclusive boarding service for a monthly fee of $600.</p>
+    <p>Let us make your boarding dreams come true! No matter the breed, size or discipline of your horse, they'll be readily welcome and expertly cared for at Whistler's Run.</p>
+    <p>We offer one, all-inclusive indoor boarding service for a monthly fee of $650 or an outdoor board option for $300.</p>
   button:
     enabled: true
     button_url: /#/
